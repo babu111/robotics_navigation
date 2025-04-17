@@ -1,37 +1,110 @@
 # robotics_navigation
 
-
 ## 1. Path Planning Algorithms
 
-Now that you understand how robots map their environments, we'll take a look at how they navigate those maps. This is done using "path planning" algorithms. These are the same types of algorithms your favorite map app uses on your phone. The two algorithms we will discuss in lecture are Dijkstra's (pronounced: dike-struh) algorithm and A\* (pronounced: A-star). Both of these algorithms have been implemented for us in the nav2-stack. Start by using both planning algorithms in simulation to compare their performance: 
+**path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
-1. Launch the `turtlebot3_world` Gazebo simulation:
+### Step-by-step Instructions (Simulation):
 
-	```bash
-	ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-	```
+1. Launch the TurtleBot3 world in Gazebo:
 
-2. Launch `nav2` to use this package's path planners. Now when you use the `Nav2 Goal` in Rviz2, this package will use predefined path planning algorithms to navigate the map towards that goal. The default planner is Dijkstra's algorithm. Use the map you made of the simulation environment in lab 2:
+    ```bash
+    export TURTLEBOT3_MODEL=burger
+    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+    ```
 
-	```bash
-	ros2 launch nav2_bringup bringup_launch.py map:=/path/to/your-map.yaml
-	```
+2. Launch the `nav2` stack with a known map:
 
-3. Start Rviz2:
+    ```bash
+    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=true map:=/path/to/your_map.yaml
+    ```
 
-	```bash
-	ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
-	```
+3. Start RViz2:
 
-4. Set the initial position with the `2D Pose Estimate` in Rviz2.
+    ```bash
+    ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+    ```
 
-5. Publish a series of poses and record how long the robot takes to navigate between them. You can publish these poses using a C++ script, a python script, or from the command line. You can time the movement using the script or your phone. The poses are given below in the format (x, y, z, qx, qy, qz, qw) where 'q' values represent quaternion orientations: 
+4. Set the initial pose with the `2D Pose Estimate` tool in RViz2.
 
+5. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can record the time between goals manually or via a script.
 
-## 2. Path Planning With the Physical Robot
+6. To switch between Dijkstra and A*:
 
-This portion of the lab assignment will entail repeating the same process for testing the two global planners, now using the GIX map. You have already completed a map for this environment. If you do not have the .pgm and .yaml files associated with the GIX map you will have to run the mapping demo and teleoperate the robot around the map before getting started.
+    Edit this parameter in your local `nav2_params.yaml`:
 
-1. Instead of providing a sequence of 4 points as navigation goals, the physical implementation will include only 2 points, one in each enclosed area of the maze.
+    ```yaml
+    global_planner:
+      ros__parameters:
+        planner_plugin: "GridBased"
+        use_astar: true  # Set to false for Dijkstra, true for A*
+    ```
 
-2. Reset the robot to position p0, then add an obstacle in the map environment. In Rviz2, add a `path` display and set the topic to `/local_plan`. Attempt the navigation again with both planner and comment on the following: 
+    Then relaunch `nav2` with that config:
+
+    ```bash
+    ros2 launch nav2_bringup bringup_launch.py map:=/path/to/your_map.yaml params_file:=/path/to/nav2_params.yaml
+    ```
+
+---
+
+## 2. Path Planning With the Physical TurtleBot
+
+This portion of the lab involves testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
+
+### Step-by-step Instructions (Physical TurtleBot):
+
+1. **Map the lab** using SLAM Toolbox:
+
+    ```bash
+    ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=false
+    ```
+
+    Start teleoperation in a new terminal:
+
+    ```bash
+    ros2 run turtlebot3_teleop teleop_keyboard
+    ```
+
+    Save the map after exploration:
+
+    ```bash
+    ros2 run nav2_map_server map_saver_cli -f ~/maps/lab_map
+    ```
+
+2. **Launch navigation stack** using your saved map:
+
+    ```bash
+    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=false map:=~/maps/lab_map.yaml
+    ```
+
+3. **Start RViz2** and set the robot’s initial pose:
+
+    ```bash
+    ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+    ```
+
+4. **Set navigation goals** between two key points in the lab using the `Nav2 Goal` tool.
+
+5. To **compare Dijkstra vs A***:
+
+    Modify your `nav2_params.yaml` as above and repeat navigation for both planners.
+
+6. **Add an obstacle** after the first run (e.g., chair or box in the path), and try navigating again with both planners. 
+
+7. In RViz2, add a `Path` display and set the topic to:
+
+    ```text
+    /local_plan
+    ```
+
+    This lets you visually compare how each planner adapts to obstacles in real-time.
+
+---
+
+### Evaluation Notes:
+
+- Time the robot from initial pose to goal.
+- Observe differences in chosen path lengths and reactivity to obstacles.
+- Use your findings to answer: How does A\* compare to Dijkstra in real-world navigation?
+
