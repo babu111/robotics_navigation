@@ -50,7 +50,7 @@
 
 ## 2. Path Planning With the Physical TurtleBot
 
-This portion of the lab involves testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
+Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
 
 ### Step-by-step Instructions (Physical TurtleBot):
 
