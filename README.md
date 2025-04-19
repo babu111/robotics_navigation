@@ -108,3 +108,11 @@ Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the 
 - Observe differences in chosen path lengths and reactivity to obstacles.
 - Use your findings to answer: How does A\* compare to Dijkstra in real-world navigation?
 
+---
+
+### Progress:
+
+- At least Nav2Goal function is reponsive, but it doesn't work well.
+- Tried adjusting occupied_thresh: 0.5, free_thresh: 0.35, no effects.
+
+

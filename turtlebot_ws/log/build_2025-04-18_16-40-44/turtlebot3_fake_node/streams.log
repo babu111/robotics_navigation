@@ -1,0 +1,75 @@
+[0.593s] Invoking command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node
+[0.696s] -- The C compiler identification is GNU 11.4.0
+[0.811s] -- The CXX compiler identification is GNU 11.4.0
+[0.829s] -- Detecting C compiler ABI info
+[0.953s] -- Detecting C compiler ABI info - done
+[0.972s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.974s] -- Detecting C compile features
+[0.974s] -- Detecting C compile features - done
+[0.991s] -- Detecting CXX compiler ABI info
+[1.166s] -- Detecting CXX compiler ABI info - done
+[1.185s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.186s] -- Detecting CXX compile features
+[1.187s] -- Detecting CXX compile features - done
+[1.192s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.499s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.622s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.685s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.765s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.772s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.791s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.816s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.853s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.945s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.987s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[2.071s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.076s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.248s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.303s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.382s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.398s] -- Looking for pthread.h
+[2.526s] -- Looking for pthread.h - found
+[2.526s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.652s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.653s] -- Found Threads: TRUE  
+[2.811s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.928s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[2.979s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[3.223s] -- Found turtlebot3_msgs: 2.2.3 (/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[3.585s] -- Configuring done
+[3.643s] -- Generating done
+[3.672s] -- Build files have been written to: /home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node
+[3.726s] Invoked command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_fake_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node
+[3.727s] Invoking command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node -- -j8 -l8
+[3.915s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_fake_node.dir/src/turtlebot3_fake_node.cpp.o[0m
+[28.116s] [100%] [32m[1mLinking CXX executable turtlebot3_fake_node[0m
+[28.800s] [100%] Built target turtlebot3_fake_node
+[28.814s] Invoked command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node -- -j8 -l8
+[28.816s] Invoking command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node
+[28.825s] -- Install configuration: ""
+[28.826s] -- Execute custom install script
+[28.826s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/lib/turtlebot3_fake_node/turtlebot3_fake_node
+[28.838s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/rviz2.launch.py
+[28.849s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/launch/turtlebot3_fake_node.launch.py
+[28.861s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/burger.yaml
+[28.872s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle.yaml
+[28.883s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/param/waffle_pi.yaml
+[28.894s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/include//turtlebot3_fake_node/turtlebot3_fake_node.hpp
+[28.905s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_fake_node
+[28.917s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_fake_node
+[28.928s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.sh
+[28.940s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/ament_prefix_path.dsv
+[28.951s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.sh
+[28.963s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/environment/path.dsv
+[28.974s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.bash
+[28.986s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.sh
+[28.998s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.zsh
+[29.009s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/local_setup.dsv
+[29.020s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv
+[29.032s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/ament_index/resource_index/packages/turtlebot3_fake_node
+[29.044s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[29.056s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/ament_cmake_export_dependencies-extras.cmake
+[29.067s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig.cmake
+[29.078s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/cmake/turtlebot3_fake_nodeConfig-version.cmake
+[29.090s] -- Symlinking: /home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.xml
+[29.104s] Invoked command in '/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node' returned '0': AMENT_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/gixadmin/robotics_navigation/turtlebot_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3_fake_node
