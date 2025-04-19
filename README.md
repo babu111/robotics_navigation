@@ -4,30 +4,58 @@
 
 **path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
-### Step-by-step Instructions (Simulation):
+### Installation
+The ROS2 env given by the IT shop boys is buggy. Consider reinstalling ROS2.
 
-1. Launch the TurtleBot3 world in Gazebo:
+### Step-by-step Instructions:
 
-    ```bash
-    export TURTLEBOT3_MODEL=burger
-    ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-    ```
+Run the following blocks of commands each in a separate terminal.
 
-2. Launch the `nav2` stack with a known map:
+1. Open fastdds discovery in a terminal:
 
     ```bash
-    ros2 launch nav2_bringup bringup_launch.py use_sim_time:=true map:=/path/to/your_map.yaml
+    fastdds discovery --server-id 0
     ```
 
-3. Start RViz2:
+2. Launch the turtlebot:
+   ```bash
+   # ssh to the robot
+    ssh ubuntu@10.18.3.94
+    
+    
+    # both on the robot and laptop, run the following 2 commands
+    echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
+    # export ROS_DISCOVERY_SERVER=<ip_of_your_laptop>:11811
+    echo "export ROS_DISCOVERY_SERVER=10.18.239.105:11811" >> ~/.bashrc
+    # then restart the terminal or souce bashrc
+    
+    # inside the robot, run
+    ros2 launch turtlebot3_bringup robot.launch.py
+   ```
+
+3. Run teleop keyboard.
+   ```bash
+   ros2 run turtlebot3_teleop teleop_keyboard
+   ```
+
+4. Launch the `nav2` stack with Jason's map:
+
+    ```bash
+    cd /home/gixadmin/robotics_navigation
+    ros2 launch nav2_bringup bringup_launch.py map:=map_kitchen.yaml
+    # use A* algorithm
+    ros2 launch nav2_bringup bringup_launch.py map:=map_kitchen.yaml planner_server.GridBased.use_astar:=True
+    ```
+
+5. Start RViz2:
 
     ```bash
     ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
     ```
 
-4. Set the initial pose with the `2D Pose Estimate` tool in RViz2.
+6. Set the initial pose with the `2D Pose Estimate` tool in RViz2.
 
-5. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can record the time between goals manually or via a script.
+7. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can set intermediate waypoints by clicking the waypoints button at bottom left and put multiple nav2 goals on the map.
 
 6. To switch between Dijkstra and A*:
 
