@@ -6,6 +6,7 @@
 
 ### Installation
 The ROS2 env given by the IT shop boys is buggy. Consider reinstalling ROS2.
+Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot installation.
 
 ### Step-by-step Instructions:
 
