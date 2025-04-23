@@ -5,8 +5,9 @@
 **path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
 ### Installation
-The ROS2 env given by the IT shop boys is buggy. Consider reinstalling ROS2.
-Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot installation.
+The ROS2 env given by the IT shop boys is buggy. Consider reinstalling [ROS2](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html).
+
+Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace installation.
 
 ### Step-by-step Instructions:
 
