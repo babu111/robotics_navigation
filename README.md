@@ -1,6 +1,6 @@
 # robotics_navigation
 
-## 1. Path Planning (Zeyi)
+## 1. Path Planning with GUI (Zeyi)
 
 **path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
@@ -129,3 +129,9 @@ Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the 
     This lets you visually compare how each planner adapts to obstacles in real-time.
 
 
+## 3. Path Planning with code (Zeyi)
+
+Use the `send_goal.py` in `nav_ws`.
+```
+ros2 run nav_ws send_goal
+```
