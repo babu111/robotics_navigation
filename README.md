@@ -84,7 +84,7 @@ Run the following blocks of commands each in a separate terminal.
 - 
 ---
 
-## 2. Path Planning With the Physical TurtleBot
+## 2. Mapping With the Physical TurtleBot
 
 Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
 
@@ -120,20 +120,12 @@ Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the 
     ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
     ```
 
-4. **Set navigation goals** between two key points in the lab using the `Nav2 Goal` tool.
-
-5. To **compare Dijkstra vs A***:
-
-    Modify your `nav2_params.yaml` as above and repeat navigation for both planners.
-
-6. **Add an obstacle** after the first run (e.g., chair or box in the path), and try navigating again with both planners. 
-
-7. In RViz2, add a `Path` display and set the topic to:
+4. In RViz2, add a `Path` display and set the topic to:
 
     ```text
     /local_plan
     ```
-
+    
     This lets you visually compare how each planner adapts to obstacles in real-time.
 
 
