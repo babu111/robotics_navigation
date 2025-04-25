@@ -77,11 +77,11 @@ Run the following blocks of commands each in a separate terminal.
     ```
 ---
 
-### Progress:
+### Progress (milestone 1):
 
 - At least Nav2Goal function is reponsive, but it doesn't work well.
 - Tried adjusting occupied_thresh: 0.5, free_thresh: 0.35, no effects.
-- 
+- Tried using Turtlebot08 instead of Turtlebot07 and it worked. Verified that it's a hardware problem.
 ---
 
 ## 2. Mapping With the Physical TurtleBot
