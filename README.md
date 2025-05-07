@@ -13,34 +13,30 @@ Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace ins
 
 Run the following blocks of commands each in a separate terminal.
 
-1. Open fastdds discovery in a terminal:
 
-    ```bash
-    fastdds discovery --server-id 0
-    ```
+~~0. Open fastdds discovery in a terminal:~~
 
-2. Launch the turtlebot:
+1. Launch the turtlebot:
    ```bash
    # ssh to the robot
-    ssh ubuntu@10.18.3.94
+    ssh ubuntu@192.168.3.186
     
     
-    # both on the robot and laptop, run the following 2 commands
-    echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
-    # export ROS_DISCOVERY_SERVER=<ip_of_your_laptop>:11811
-    echo "export ROS_DISCOVERY_SERVER=10.18.239.105:11811" >> ~/.bashrc
+    # both on the robot and laptop, run the following
+    # ROS_DOMAIN_ID=30 is occupied by the hardware & software team
+    echo "export ROS_DOMAIN_ID=50" >> ~/.bashrc
     # then restart the terminal or souce bashrc
     
     # inside the robot, run
     ros2 launch turtlebot3_bringup robot.launch.py
    ```
 
-3. Run teleop keyboard.
+2. Run teleop keyboard.
    ```bash
    ros2 run turtlebot3_teleop teleop_keyboard
    ```
 
-4. Launch the `nav2` stack with Jason's map:
+3. Launch the `nav2` stack with Jason's map:
 
     ```bash
     cd /home/gixadmin/robotics_navigation
@@ -49,17 +45,17 @@ Run the following blocks of commands each in a separate terminal.
     ros2 launch nav2_bringup bringup_launch.py map:=map_kitchen.yaml planner_server.GridBased.use_astar:=True
     ```
 
-5. Start RViz2:
+4. Start RViz2:
 
     ```bash
     ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
     ```
 
-6. Set the initial pose with the `2D Pose Estimate` tool in RViz2.
+5. Set the initial pose with the `2D Pose Estimate` tool in RViz2.
 
-7. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can set intermediate waypoints by clicking the waypoints button at bottom left and put multiple nav2 goals on the map.
+6. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can set intermediate waypoints by clicking the waypoints button at bottom left and put multiple nav2 goals on the map.
 
-6. To switch between Dijkstra and A*:
+7. To switch between Dijkstra and A*:
 
     Edit this parameter in your local `nav2_params.yaml`:
 
