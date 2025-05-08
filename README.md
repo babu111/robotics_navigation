@@ -55,8 +55,8 @@ Run the following blocks of commands each in a separate terminal.
 
 6. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can set intermediate waypoints by clicking the waypoints button at bottom left and put multiple nav2 goals on the map.
 
+#### ⚠️ !! IMPORTANT !!: **Turn off teleop before you give Nav2 Goal command.**
 
-!!IMPORTANT!!: Turn off teleop before you give `Nav2 Goal` command.
 
 7. To switch between Dijkstra and A*:
 
