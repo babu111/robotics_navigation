@@ -1,0 +1,3 @@
+[console_scripts]
+send_goal = c8nav.send_goal:main
+

@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'send_goal = c8nav.send_goal:main',
         ],
     },
 )

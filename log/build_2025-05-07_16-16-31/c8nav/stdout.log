@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/c8nav/c8nav.egg-info
+writing ../../build/c8nav/c8nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/c8nav/c8nav.egg-info/dependency_links.txt
+writing entry points to ../../build/c8nav/c8nav.egg-info/entry_points.txt
+writing requirements to ../../build/c8nav/c8nav.egg-info/requires.txt
+writing top-level names to ../../build/c8nav/c8nav.egg-info/top_level.txt
+writing manifest file '../../build/c8nav/c8nav.egg-info/SOURCES.txt'
+reading manifest file '../../build/c8nav/c8nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/c8nav/c8nav.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/gixadmin/robotics_navigation/build/c8nav/build
+creating /home/gixadmin/robotics_navigation/build/c8nav/build/lib
+creating /home/gixadmin/robotics_navigation/build/c8nav/build/lib/c8nav
+copying c8nav/send_goal.py -> /home/gixadmin/robotics_navigation/build/c8nav/build/lib/c8nav
+copying c8nav/__init__.py -> /home/gixadmin/robotics_navigation/build/c8nav/build/lib/c8nav
+running install
+running install_lib
+creating /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav
+copying /home/gixadmin/robotics_navigation/build/c8nav/build/lib/c8nav/send_goal.py -> /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav
+copying /home/gixadmin/robotics_navigation/build/c8nav/build/lib/c8nav/__init__.py -> /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav
+byte-compiling /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav/send_goal.py to send_goal.cpython-310.pyc
+byte-compiling /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/gixadmin/robotics_navigation/install/c8nav/share/ament_index
+creating /home/gixadmin/robotics_navigation/install/c8nav/share/ament_index/resource_index
+creating /home/gixadmin/robotics_navigation/install/c8nav/share/ament_index/resource_index/packages
+copying resource/c8nav -> /home/gixadmin/robotics_navigation/install/c8nav/share/ament_index/resource_index/packages
+copying package.xml -> /home/gixadmin/robotics_navigation/install/c8nav/share/c8nav
+running install_egg_info
+Copying ../../build/c8nav/c8nav.egg-info to /home/gixadmin/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing send_goal script to /home/gixadmin/robotics_navigation/install/c8nav/lib/c8nav
+writing list of installed files to '/home/gixadmin/robotics_navigation/build/c8nav/install.log'
