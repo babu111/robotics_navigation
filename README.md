@@ -1,5 +1,21 @@
 # robotics_navigation
 
+
+## Progress:
+
+### Milestone 1:
+
+- At least Nav2Goal function is reponsive, but it doesn't work well.
+- Tried adjusting occupied_thresh: 0.5, free_thresh: 0.35, no effects.
+- Tried using Turtlebot08 instead of Turtlebot07 and it worked. Verified that it's a hardware problem.
+
+
+### Milestone 2:
+
+- Concatenated the kitchen map and the robotics workshop map together.
+- Able to use python code to give nav goal in coordinates and let turtlebot navigate to that spot.
+---
+
 ## Path Planning with GUI (Zeyi)
 
 **path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
@@ -88,21 +104,6 @@ This is to help you get the ip of the robot when you can't ssh onto it.
 4. Run `ifconfig -a`.
 
 
----
-
-## Progress:
-
-### Milestone 1:
-
-- At least Nav2Goal function is reponsive, but it doesn't work well.
-- Tried adjusting occupied_thresh: 0.5, free_thresh: 0.35, no effects.
-- Tried using Turtlebot08 instead of Turtlebot07 and it worked. Verified that it's a hardware problem.
-
-
-### Milestone 2:
-
-- Concatenated the kitchen map and the robotics workshop map together.
-- Able to use python code to give nav goal in coordinates and let turtlebot navigate to that spot.
 ---
 
 ## Mapping With the Physical TurtleBot
