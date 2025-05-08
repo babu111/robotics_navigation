@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/c8nav/c8nav.egg-info/PKG-INFO
+../../build/c8nav/c8nav.egg-info/SOURCES.txt
+../../build/c8nav/c8nav.egg-info/dependency_links.txt
+../../build/c8nav/c8nav.egg-info/entry_points.txt
+../../build/c8nav/c8nav.egg-info/requires.txt
+../../build/c8nav/c8nav.egg-info/top_level.txt
+../../build/c8nav/c8nav.egg-info/zip-safe
+c8nav/__init__.py
+c8nav/send_goal.py
+resource/c8nav
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

@@ -13,7 +13,7 @@ fastdds discovery --server-id 0
 ifconfig -a
 
 # ssh to the robot
-ssh ubuntu@10.18.3.94
+ssh ubuntu@10.18.3.92
 
 
 # both on the robot and laptop, run the following 2 commands
