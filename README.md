@@ -174,9 +174,9 @@ colcon build --packages-select c8nav
 source install/setup.bash
 ```
 
-To save the robot's current position on the map:
+To save the robot's current position on the map(eg. sink):
 ```
-ros2 run c8nav save_current_pose --name sink(eg. sink):
+ros2 run c8nav save_current_pose --name sink
 ```
 The position will be saved to robotics_navigation/saved_goals.yaml (currently there are pick_up/wall/sink/elevator/sofa/lab)
 
