@@ -1,1 +1,0 @@
-/home/gixadmin/robotics_navigation/turtlebot_ws/build/turtlebot3/ament_cmake_core/turtlebot3Config.cmake

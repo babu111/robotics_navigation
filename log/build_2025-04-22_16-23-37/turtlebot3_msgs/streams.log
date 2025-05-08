@@ -1,0 +1,33 @@
+[0.031s] Invoking command in '/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_msgs': /usr/bin/cmake /home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_msgs -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final lab/robotics_navigation/install/turtlebot3_msgs
+[0.442s] -- The C compiler identification is GNU 11.4.0
+[0.621s] -- The CXX compiler identification is GNU 11.4.0
+[0.636s] -- Detecting C compiler ABI info
+[0.750s] -- Detecting C compiler ABI info - done
+[0.768s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.768s] -- Detecting C compile features
+[0.769s] -- Detecting C compile features - done
+[0.777s] -- Detecting CXX compiler ABI info
+[0.900s] -- Detecting CXX compiler ABI info - done
+[0.925s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.925s] -- Detecting CXX compile features
+[0.927s] -- Detecting CXX compile features - done
+[0.946s] [31mCMake Error at CMakeLists.txt:18 (find_package):
+[0.946s]   By not providing "Findaction_msgs.cmake" in CMAKE_MODULE_PATH this project
+[0.946s]   has asked CMake to find a package configuration file provided by
+[0.946s]   "action_msgs", but CMake did not find one.
+[0.946s] 
+[0.946s]   Could not find a package configuration file provided by "action_msgs" with
+[0.946s]   any of the following names:
+[0.946s] 
+[0.947s]     action_msgsConfig.cmake
+[0.947s]     action_msgs-config.cmake
+[0.947s] 
+[0.947s]   Add the installation prefix of "action_msgs" to CMAKE_PREFIX_PATH or set
+[0.947s]   "action_msgs_DIR" to a directory containing one of the above files.  If
+[0.947s]   "action_msgs" provides a separate development package or SDK, be sure it
+[0.947s]   has been installed.
+[0.947s] 
+[0.948s] [0m
+[0.948s] -- Configuring incomplete, errors occurred!
+[0.948s] See also "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_msgs/CMakeFiles/CMakeOutput.log".
+[0.951s] Invoked command in '/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_msgs' returned '1': /usr/bin/cmake /home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_msgs -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final lab/robotics_navigation/install/turtlebot3_msgs

@@ -1,0 +1,1 @@
+Invoking command in '/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_gazebo': /usr/bin/cmake /home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final lab/robotics_navigation/install/turtlebot3_gazebo
