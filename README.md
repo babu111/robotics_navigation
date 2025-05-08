@@ -55,6 +55,9 @@ Run the following blocks of commands each in a separate terminal.
 
 6. Publish a navigation goal using the `Nav2 Goal` button in RViz2. You can set intermediate waypoints by clicking the waypoints button at bottom left and put multiple nav2 goals on the map.
 
+
+!!IMPORTANT!!: Turn off teleop before you give `Nav2 Goal` command.
+
 7. To switch between Dijkstra and A*:
 
     Edit this parameter in your local `nav2_params.yaml`:
@@ -94,7 +97,7 @@ This is to help you get the ip of the robot when you can't ssh onto it.
 - Tried using Turtlebot08 instead of Turtlebot07 and it worked. Verified that it's a hardware problem.
 ---
 
-## 3. Mapping With the Physical TurtleBot
+## Mapping With the Physical TurtleBot
 
 Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
 
@@ -139,9 +142,18 @@ Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the 
     This lets you visually compare how each planner adapts to obstacles in real-time.
 
 
-## 3. Path Planning with code (Zeyi)
+## Path Planning with code (Zeyi)
 
-Use the `send_goal.py` in `nav_ws`.
+First configure the environment.
 ```
-ros2 run nav_ws send_goal
+cd ~/robotics_navigation
+colcon build --packages-select c8nav
+source install/setup.bash
+```
+
+To use path planning, first follow step 1-5 of section "Path Planning with GUI".
+
+Then use the `send_goal.py` in `nav_ws`.
+```
+ros2 run c8nav send_goal --x -8.0 --y 1.5 --theta 1.57
 ```
