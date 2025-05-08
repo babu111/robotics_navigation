@@ -165,3 +165,22 @@ Then use the `send_goal.py` in `nav_ws`.
 ```
 ros2 run c8nav send_goal --x -8.0 --y 1.5 --theta 1.57
 ```
+
+## Save current robot position and navigate to saved position(Yuxin)
+First configure the environment.
+```
+cd ~/robotics_navigation
+colcon build --packages-select c8nav
+source install/setup.bash
+```
+
+To save the robot's current position on the map:
+```
+ros2 run c8nav save_current_pose --name sink(eg. sink):
+```
+The position will be saved to robotics_navigation/saved_goals.yaml (currently there are pick_up/wall/sink/elevator/sofa/lab)
+
+To navigate to a saved position(eg. sink):
+```
+ros2 run c8nav get_goal --name sink
+```
