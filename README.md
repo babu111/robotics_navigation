@@ -1,6 +1,6 @@
 # robotics_navigation
 
-## 1. Path Planning with GUI (Zeyi)
+## Path Planning with GUI (Zeyi)
 
 **path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
@@ -71,16 +71,30 @@ Run the following blocks of commands each in a separate terminal.
     ```bash
     ros2 launch nav2_bringup bringup_launch.py map:=/path/to/your_map.yaml params_file:=/path/to/nav2_params.yaml
     ```
+
+### How to get ip of a robot:
+
+This is to help you get the ip of the robot when you can't ssh onto it.
+
+1. Connect a hdmi to a micro-hdmi adapter. Plug the micro-hdmi to the turtlebot. Plug a usb of keyboard to the turtlebot.
+
+2. Turn on the turtlebot. ONLY do so after you connected properly in step 1.
+
+3. Login with user=ubuntu, password=robot1234
+
+4. Run `ifconfig -a`.
+
+
 ---
 
-### Progress (milestone 1):
+## Progress (milestone 1):
 
 - At least Nav2Goal function is reponsive, but it doesn't work well.
 - Tried adjusting occupied_thresh: 0.5, free_thresh: 0.35, no effects.
 - Tried using Turtlebot08 instead of Turtlebot07 and it worked. Verified that it's a hardware problem.
 ---
 
-## 2. Mapping With the Physical TurtleBot
+## 3. Mapping With the Physical TurtleBot
 
 Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
 
