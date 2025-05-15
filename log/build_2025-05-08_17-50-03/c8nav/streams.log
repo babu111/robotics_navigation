@@ -1,0 +1,27 @@
+[1.532s] Invoking command in '/home/jason/robotics_navigation/nav_ws/c8nav': PYTHONPATH=/home/jason/robotics_navigation/build/c8nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/robotics_navigation/install/c8nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/c8nav build --build-base /home/jason/robotics_navigation/build/c8nav/build install --record /home/jason/robotics_navigation/build/c8nav/install.log --single-version-externally-managed install_data
+[2.000s] running egg_info
+[2.000s] writing ../../build/c8nav/c8nav.egg-info/PKG-INFO
+[2.003s] writing dependency_links to ../../build/c8nav/c8nav.egg-info/dependency_links.txt
+[2.004s] writing entry points to ../../build/c8nav/c8nav.egg-info/entry_points.txt
+[2.004s] writing requirements to ../../build/c8nav/c8nav.egg-info/requires.txt
+[2.005s] writing top-level names to ../../build/c8nav/c8nav.egg-info/top_level.txt
+[2.009s] reading manifest file '../../build/c8nav/c8nav.egg-info/SOURCES.txt'
+[2.010s] writing manifest file '../../build/c8nav/c8nav.egg-info/SOURCES.txt'
+[2.010s] running build
+[2.011s] running build_py
+[2.011s] copying c8nav/get_goal.py -> /home/jason/robotics_navigation/build/c8nav/build/lib/c8nav
+[2.012s] copying c8nav/__init__.py -> /home/jason/robotics_navigation/build/c8nav/build/lib/c8nav
+[2.012s] copying c8nav/save_current_pose.py -> /home/jason/robotics_navigation/build/c8nav/build/lib/c8nav
+[2.013s] copying c8nav/send_goal.py -> /home/jason/robotics_navigation/build/c8nav/build/lib/c8nav
+[2.013s] running install
+[2.014s] running install_lib
+[2.018s] running install_data
+[2.018s] running install_egg_info
+[2.022s] removing '/home/jason/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav-0.0.0-py3.10.egg-info' (and everything under it)
+[2.024s] Copying ../../build/c8nav/c8nav.egg-info to /home/jason/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav-0.0.0-py3.10.egg-info
+[2.026s] running install_scripts
+[2.075s] Installing get_goal script to /home/jason/robotics_navigation/install/c8nav/lib/c8nav
+[2.075s] Installing save_current_pose script to /home/jason/robotics_navigation/install/c8nav/lib/c8nav
+[2.075s] Installing send_goal script to /home/jason/robotics_navigation/install/c8nav/lib/c8nav
+[2.075s] writing list of installed files to '/home/jason/robotics_navigation/build/c8nav/install.log'
+[2.142s] Invoked command in '/home/jason/robotics_navigation/nav_ws/c8nav' returned '0': PYTHONPATH=/home/jason/robotics_navigation/build/c8nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/robotics_navigation/install/c8nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/c8nav build --build-base /home/jason/robotics_navigation/build/c8nav/build install --record /home/jason/robotics_navigation/build/c8nav/install.log --single-version-externally-managed install_data

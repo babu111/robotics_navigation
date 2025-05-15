@@ -9,7 +9,7 @@ def main():
     parser.add_argument('--name', required=True, help='Goal name to send (e.g., sofa)')
     args = parser.parse_args()
 
-    yaml_path = "/home/gixstudent/Desktop/Final_lab/robotics_navigation/saved_goals.yaml"
+    yaml_path = "saved_goals.yaml"
     if not os.path.exists(yaml_path):
         print(f'Error: Goal file not found at {yaml_path}')
         sys.exit(1)

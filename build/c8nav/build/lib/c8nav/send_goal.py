@@ -57,3 +57,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# ros2 run c8nav send_goal.py --x 2.0 --y 1.5 --theta 1.57
+

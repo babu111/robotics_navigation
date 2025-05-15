@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/c8nav'
+    sys.prefix = sys.exec_prefix = '/home/jason/robotics_navigation/install/c8nav'

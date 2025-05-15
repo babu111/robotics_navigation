@@ -27,7 +27,7 @@ class PoseSaver(Node):
             qw = transform.transform.rotation.w
             theta = math.atan2(2.0 * qz * qw, 1.0 - 2.0 * qz * qz)
 
-            save_path = os.path.join(os.getcwd(),'saved_goals.yaml')
+            save_path = "saved_goals.yaml"
             if os.path.exists(save_path):
                 with open(save_path, 'r') as f:
                     data = yaml.safe_load(f) or {}
