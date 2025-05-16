@@ -26,6 +26,7 @@ The ROS2 env given by the IT shop boys is buggy. Consider reinstalling [ROS2](ht
 Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace installation.
 
 ### Step-by-step Instructions:
+(for turtlebot)
 Install raspi-config: If it's not already installed, run: sudo apt install raspi-config. 
 Open raspi-config: Run: sudo raspi-config. 
 Select "Interfacing Options": Choose the relevant option in the menu. 
@@ -48,11 +49,14 @@ Run the following blocks of commands each in a separate terminal.
     
     # both on the robot and laptop, run the following
     # ROS_DOMAIN_ID=30 is occupied by the hardware & software team
-    echo "export ROS_DOMAIN_ID=50" >> ~/.bashrc
+    echo "export ROS_DOMAIN_ID=30" >> ~/.bashrc
     # then restart the terminal or souce bashrc
     
     # inside the robot, run
-    ros2 launch turtlebot3_bringup robot.launch.py
+    # ros2 launch turtlebot3_bringup robot.launch.py
+
+    # for create bot, run:
+      ros2 launch techin517 techin517.launch.py
    ```
 
 2. Run teleop keyboard.
