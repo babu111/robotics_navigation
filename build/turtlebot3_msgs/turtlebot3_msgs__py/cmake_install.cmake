@@ -1,8 +1,8 @@
-# Install script for directory: /home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_msgs/turtlebot3_msgs__py
+# Install script for directory: /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/turtlebot3_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gixstudent/Desktop/Final lab/robotics_navigation/install/turtlebot3_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

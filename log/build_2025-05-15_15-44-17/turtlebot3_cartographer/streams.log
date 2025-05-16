@@ -1,0 +1,45 @@
+[0.056s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer
+[0.825s] -- The C compiler identification is GNU 11.4.0
+[0.825s] -- The CXX compiler identification is GNU 11.4.0
+[0.825s] -- Detecting C compiler ABI info
+[0.825s] -- Detecting C compiler ABI info - done
+[0.826s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.827s] -- Detecting C compile features
+[0.828s] -- Detecting C compile features - done
+[0.828s] -- Detecting CXX compiler ABI info
+[0.841s] -- Detecting CXX compiler ABI info - done
+[0.870s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.870s] -- Detecting CXX compile features
+[0.872s] -- Detecting CXX compile features - done
+[0.878s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.245s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.425s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.692s] -- Configuring done
+[1.702s] -- Generating done
+[1.709s] -- Build files have been written to: /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer
+[1.719s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_cartographer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer
+[1.723s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer -- -j8 -l8
+[1.833s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer -- -j8 -l8
+[1.859s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer
+[1.879s] -- Install configuration: ""
+[1.880s] -- Execute custom install script
+[1.882s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[1.907s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[1.932s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[1.958s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[1.983s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[2.007s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[2.034s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[2.058s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.dsv
+[2.079s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[2.100s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.dsv
+[2.124s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[2.150s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[2.174s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[2.199s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.dsv
+[2.223s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv
+[2.247s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[2.272s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[2.296s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[2.320s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[2.349s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_cartographer

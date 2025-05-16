@@ -1,0 +1,1 @@
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/rosidl_generator_py/turtlebot3_msgs/__init__.py

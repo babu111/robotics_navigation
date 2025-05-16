@@ -26,8 +26,14 @@ The ROS2 env given by the IT shop boys is buggy. Consider reinstalling [ROS2](ht
 Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace installation.
 
 ### Step-by-step Instructions:
+Install raspi-config: If it's not already installed, run: sudo apt install raspi-config. 
+Open raspi-config: Run: sudo raspi-config. 
+Select "Interfacing Options": Choose the relevant option in the menu. 
+Enable Camera: Locate the camera interface option (usually labeled "Camera" or "Legacy Camera") and enable it. 
+Exit raspi-config: Follow the prompts to save the changes and exi
 
 Run the following blocks of commands each in a separate terminal.
+
 
 
 ~~0. Open fastdds discovery in a terminal:~~

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node"
+CMAKE_SOURCE_DIR = /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_fake_node"
+CMAKE_BINARY_DIR = /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_fake_node
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_fake_node" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node" "/home/gixstudent/Desktop/Final lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node" "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_fake_node" "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_fake_node" "/home/gixstudent/Desktop/Final lab/robotics_navigation/build/turtlebot3_fake_node/CMakeFiles/uninstall.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_fake_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_fake_node /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_fake_node /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_fake_node /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_fake_node/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

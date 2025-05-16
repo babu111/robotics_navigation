@@ -1,6 +1,1 @@
-uint8 action
-bool init
----
-float32[] state
-float32 reward
-bool done
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_msgs/srv/Dqn.srv

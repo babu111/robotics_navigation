@@ -1,7 +1,7 @@
 CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o: \
- /home/gixstudent/Desktop/Final\ lab/robotics_navigation/src/turtlebot3/turtlebot3_node/src/dynamixel_sdk_wrapper.cpp \
+ /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_node/src/dynamixel_sdk_wrapper.cpp \
  /usr/include/stdc-predef.h \
- /home/gixstudent/Desktop/Final\ lab/robotics_navigation/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/dynamixel_sdk_wrapper.hpp \
+ /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_node/include/turtlebot3_node/dynamixel_sdk_wrapper.hpp \
  /opt/ros/humble/include/rcutils/rcutils/logging_macros.h \
  /opt/ros/humble/include/rcutils/rcutils/logging.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \

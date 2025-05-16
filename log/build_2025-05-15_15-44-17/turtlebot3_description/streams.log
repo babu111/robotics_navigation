@@ -1,0 +1,57 @@
+[0.060s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description
+[0.829s] -- The C compiler identification is GNU 11.4.0
+[0.829s] -- The CXX compiler identification is GNU 11.4.0
+[0.830s] -- Detecting C compiler ABI info
+[0.830s] -- Detecting C compiler ABI info - done
+[0.830s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.831s] -- Detecting C compile features
+[0.831s] -- Detecting C compile features - done
+[0.831s] -- Detecting CXX compiler ABI info
+[0.874s] -- Detecting CXX compiler ABI info - done
+[0.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.908s] -- Detecting CXX compile features
+[0.909s] -- Detecting CXX compile features - done
+[0.914s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.293s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.477s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.559s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.976s] -- Configuring done
+[1.983s] -- Generating done
+[1.986s] -- Build files have been written to: /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description
+[2.000s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description
+[2.004s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description -- -j8 -l8
+[2.110s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description -- -j8 -l8
+[2.114s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description
+[2.132s] -- Install configuration: ""
+[2.133s] -- Execute custom install script
+[2.135s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[2.166s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[2.185s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[2.208s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[2.229s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[2.253s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[2.279s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[2.304s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[2.328s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[2.350s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[2.375s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[2.400s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[2.412s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[2.431s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[2.456s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[2.480s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[2.504s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[2.527s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[2.547s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv
+[2.565s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[2.582s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv
+[2.599s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[2.620s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[2.641s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[2.659s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv
+[2.677s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/package.dsv
+[2.693s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[2.710s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[2.727s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[2.747s] -- Symlinking: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[2.772s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description
