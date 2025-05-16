@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ddc8d70ffa9deea081f1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "libcreate",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "battery_level::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battery_level-8722b30455510b5e1ede.json",
+					"name" : "battery_level",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "bumpers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bumpers-8128558ee646e9448017.json",
+					"name" : "bumpers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cliffs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cliffs-2790be21d474908eb1ed.json",
+					"name" : "cliffs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "create::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-create-fd345e4d63994fb4b3d5.json",
+					"name" : "create",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drive_circle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drive_circle-853bf9a76de69983c5cb.json",
+					"name" : "drive_circle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "leds::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-leds-d36c4f3eb8b625b2db5a.json",
+					"name" : "leds",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "packets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-packets-ae5648aec6c3665b3803.json",
+					"name" : "packets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "play_song::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-play_song-a5028a46dfd5d24dfc9d.json",
+					"name" : "play_song",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_create::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_create-fd2ea766c8d8ab647806.json",
+					"name" : "test_create",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_data::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_data-1c23d1597371dae2ec51.json",
+					"name" : "test_data",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_packet::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_packet-1eb31e30aa0ac78497ef.json",
+					"name" : "test_packet",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_robot_model::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_robot_model-b7af0d89a8075add14f3.json",
+					"name" : "test_robot_model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_serial_query::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_serial_query-82f6efd33554d50bd285.json",
+					"name" : "test_serial_query",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_serial_stream::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_serial_stream-0a928d2c8110a9855c24.json",
+					"name" : "test_serial_stream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeldrop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeldrop-4fd4a2eb998fe9ebeb4b.json",
+					"name" : "wheeldrop",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate",
+		"source" : "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/libcreate"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

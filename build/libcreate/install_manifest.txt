@@ -1,0 +1,14 @@
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/libcreate.so
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/util.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/types.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_query.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/packet.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/create.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_stream.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/data.h
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/share/libcreate/package.xml

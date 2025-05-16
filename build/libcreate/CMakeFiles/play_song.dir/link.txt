@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/play_song.dir/examples/play_song.cpp.o -o play_song  -Wl,-rpath,/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate libcreate.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0 /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.74.0 

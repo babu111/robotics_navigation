@@ -1,0 +1,41 @@
+[2.182s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop': PYTHONPATH=/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build
+[3.038s] running develop
+[3.581s] Removing /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3-teleop.egg-link (link to .)
+[3.689s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop' returned '0': PYTHONPATH=/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build
+[3.694s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_teleop': PYTHONPATH=/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build install --record /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data --force
+[4.271s] running egg_info
+[4.273s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[4.274s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[4.276s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[4.277s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[4.277s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[4.282s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[4.285s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[4.286s] running build
+[4.286s] running build_py
+[4.286s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build
+[4.287s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib
+[4.287s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[4.287s] copying turtlebot3_teleop/__init__.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[4.287s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.287s] copying turtlebot3_teleop/script/__init__.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.290s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[4.291s] running install
+[4.291s] running install_lib
+[4.291s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop
+[4.291s] copying /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/__init__.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop
+[4.292s] creating /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[4.292s] copying /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/__init__.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[4.292s] copying /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script
+[4.298s] byte-compiling /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/__init__.py to __init__.cpython-310.pyc
+[4.299s] byte-compiling /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script/__init__.py to __init__.cpython-310.pyc
+[4.299s] byte-compiling /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-310.pyc
+[4.302s] running install_data
+[4.303s] copying resource/turtlebot3_teleop -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[4.304s] copying package.xml -> /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/share/turtlebot3_teleop
+[4.309s] running install_egg_info
+[4.318s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages/turtlebot3_teleop-2.1.5-py3.10.egg-info
+[4.321s] running install_scripts
+[4.402s] Installing teleop_keyboard script to /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[4.405s] writing list of installed files to '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/install.log'
+[4.850s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_teleop' returned '0': PYTHONPATH=/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/turtlebot3_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/build install --record /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_teleop/install.log --single-version-externally-managed install_data --force

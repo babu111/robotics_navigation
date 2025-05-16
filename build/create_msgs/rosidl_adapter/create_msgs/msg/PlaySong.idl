@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from create_msgs/msg/PlaySong.msg
+// generated code does not contain a copyright notice
+
+
+module create_msgs {
+  module msg {
+    struct PlaySong {
+      @verbatim (language="comment", text=
+        "song number")
+      @unit (value="0-3")
+      uint8 song;
+    };
+  };
+};

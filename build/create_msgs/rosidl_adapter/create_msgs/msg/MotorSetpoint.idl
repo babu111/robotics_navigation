@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from create_msgs/msg/MotorSetpoint.msg
+// generated code does not contain a copyright notice
+
+
+module create_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "For the main and side brush motors, provide a duty cycle in the range [-1, 1]" "\n"
+      "The range of acceptable values for the vacuum motor is [0, 1]")
+    struct MotorSetpoint {
+      float duty_cycle;
+    };
+  };
+};

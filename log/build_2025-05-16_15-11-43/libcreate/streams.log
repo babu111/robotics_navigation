@@ -1,0 +1,51 @@
+[0.036s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate -- -j8 -l8
+[0.145s] [35m[1mConsolidate compiler generated dependencies of target create[0m
+[0.315s] [ 22%] Built target create
+[0.346s] [35m[1mConsolidate compiler generated dependencies of target battery_level[0m
+[0.356s] [35m[1mConsolidate compiler generated dependencies of target leds[0m
+[0.357s] [35m[1mConsolidate compiler generated dependencies of target packets[0m
+[0.362s] [35m[1mConsolidate compiler generated dependencies of target play_song[0m
+[0.381s] [35m[1mConsolidate compiler generated dependencies of target cliffs[0m
+[0.381s] [35m[1mConsolidate compiler generated dependencies of target drive_circle[0m
+[0.382s] [35m[1mConsolidate compiler generated dependencies of target bumpers[0m
+[0.382s] [35m[1mConsolidate compiler generated dependencies of target wheeldrop[0m
+[0.437s] [ 27%] Built target play_song
+[0.440s] [ 33%] Built target drive_circle
+[0.441s] [ 38%] Built target leds
+[0.445s] [ 44%] Built target packets
+[0.446s] [ 50%] Built target wheeldrop
+[0.452s] [ 55%] Built target battery_level
+[0.453s] [ 61%] Built target bumpers
+[0.467s] [35m[1mConsolidate compiler generated dependencies of target test_create[0m
+[0.469s] [ 66%] Built target cliffs
+[0.482s] [35m[1mConsolidate compiler generated dependencies of target test_data[0m
+[0.482s] [35m[1mConsolidate compiler generated dependencies of target test_robot_model[0m
+[0.485s] [35m[1mConsolidate compiler generated dependencies of target test_packet[0m
+[0.486s] [35m[1mConsolidate compiler generated dependencies of target test_serial_query[0m
+[0.495s] [35m[1mConsolidate compiler generated dependencies of target test_serial_stream[0m
+[0.521s] [ 72%] Built target test_create
+[0.523s] [ 77%] Built target test_robot_model
+[0.524s] [ 83%] Built target test_packet
+[0.524s] [ 88%] Built target test_data
+[0.535s] [ 94%] Built target test_serial_query
+[0.544s] [100%] Built target test_serial_stream
+[1.081s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate -- -j8 -l8
+[1.083s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate
+[1.092s] -- Install configuration: ""
+[1.094s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/libcreate.so
+[1.094s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include
+[1.094s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create
+[1.095s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/util.h
+[1.103s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/types.h
+[1.105s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial.h
+[1.105s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_query.h
+[1.105s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/packet.h
+[1.105s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/create.h
+[1.105s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_stream.h
+[1.106s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/data.h
+[1.106s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+[1.106s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+[1.107s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+[1.107s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+[1.107s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/share/libcreate/package.xml
+[1.149s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/libcreate

@@ -1,0 +1,12 @@
+{
+  "package_name": "create_msgs",
+  "non_idl_tuples": [
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/Bumper.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/ChargingState.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/DefineSong.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/Mode.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/PlaySong.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/MotorSetpoint.msg",
+    "/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs:msg/Cliff.msg"
+  ]
+}

@@ -1,0 +1,10 @@
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/uninstall.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/create_driver_uninstall.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/create_driver.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/test.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/edit_cache.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/rebuild_cache.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/list_install_components.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/install.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/install/local.dir
+/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_driver/CMakeFiles/install/strip.dir

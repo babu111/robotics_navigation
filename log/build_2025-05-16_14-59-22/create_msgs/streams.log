@@ -1,0 +1,399 @@
+[0.033s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs
+[0.210s] -- The C compiler identification is GNU 11.4.0
+[0.373s] -- The CXX compiler identification is GNU 11.4.0
+[0.390s] -- Detecting C compiler ABI info
+[0.534s] -- Detecting C compiler ABI info - done
+[0.558s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.558s] -- Detecting C compile features
+[0.558s] -- Detecting C compile features - done
+[0.562s] -- Detecting CXX compiler ABI info
+[0.719s] -- Detecting CXX compiler ABI info - done
+[0.738s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.742s] -- Detecting CXX compile features
+[0.742s] -- Detecting CXX compile features - done
+[0.749s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.977s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.130s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.135s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.148s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.227s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.285s] -- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+[1.677s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.144s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.899s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.904s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.987s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.987s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.988s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.988s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.029s] -- Found PythonExtra: .so  
+[3.207s] -- Configuring done
+[3.372s] -- Generating done
+[3.398s] -- Build files have been written to: /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs
+[3.417s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/create_robot/create_msgs -DCMAKE_INSTALL_PREFIX=/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs
+[3.426s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs -- -j8 -l8
+[3.554s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.635s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.686s] [  2%] Built target ament_cmake_python_copy_create_msgs
+[4.367s] running egg_info
+[4.368s] creating create_msgs.egg-info
+[4.368s] writing create_msgs.egg-info/PKG-INFO
+[4.368s] writing dependency_links to create_msgs.egg-info/dependency_links.txt
+[4.368s] writing top-level names to create_msgs.egg-info/top_level.txt
+[4.368s] writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+[4.368s] reading manifest file 'create_msgs.egg-info/SOURCES.txt'
+[4.369s] writing manifest file 'create_msgs.egg-info/SOURCES.txt'
+[4.448s] [  2%] Built target ament_cmake_python_build_create_msgs_egg
+[5.913s] [  2%] Built target create_msgs__cpp
+[5.952s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.957s] [  5%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.958s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.289s] [  7%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/bumper__functions.c.o[0m
+[6.290s] [  8%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/charging_state__functions.c.o[0m
+[6.302s] [ 10%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/define_song__functions.c.o[0m
+[6.313s] [ 11%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/mode__functions.c.o[0m
+[6.316s] [ 12%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/play_song__functions.c.o[0m
+[6.477s] [ 13%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/cliff__functions.c.o[0m
+[6.490s] [ 15%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_msgs/msg/detail/motor_setpoint__functions.c.o[0m
+[6.636s] [ 16%] [32m[1mLinking C shared library libcreate_msgs__rosidl_generator_c.so[0m
+[6.755s] [ 16%] Built target create_msgs__rosidl_generator_c
+[6.792s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.792s] [ 18%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.794s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.834s] [ 21%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/bumper__type_support.cpp.o[0m
+[7.847s] [ 22%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[7.851s] [ 24%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/charging_state__type_support.cpp.o[0m
+[7.857s] [ 25%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[8.515s] [ 26%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/define_song__type_support.cpp.o[0m
+[8.630s] [ 27%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/define_song__type_support.cpp.o[0m
+[8.873s] [ 29%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/bumper__type_support.cpp.o[0m
+[9.002s] [ 30%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/charging_state__type_support.cpp.o[0m
+[9.079s] [ 31%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/mode__type_support.cpp.o[0m
+[9.103s] [ 32%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[9.125s] [ 34%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/define_song__type_support.cpp.o[0m
+[9.210s] [ 35%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/mode__type_support.cpp.o[0m
+[9.229s] [ 36%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/bumper__type_support.c.o[0m
+[9.321s] [ 37%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/play_song__type_support.cpp.o[0m
+[9.336s] [ 39%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/charging_state__type_support.c.o[0m
+[9.381s] [ 40%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[9.452s] [ 41%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/define_song__type_support.c.o[0m
+[9.454s] [ 43%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/charging_state__type_support.cpp.o[0m
+[9.462s] [ 44%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_msgs/msg/cliff__type_support.cpp.o[0m
+[9.503s] [ 45%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/mode__type_support.cpp.o[0m
+[9.572s] [ 46%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/mode__type_support.c.o[0m
+[9.578s] [ 48%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_c.so[0m
+[9.683s] [ 49%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/play_song__type_support.c.o[0m
+[9.729s] [ 49%] Built target create_msgs__rosidl_typesupport_c
+[9.755s] [ 50%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/define_song__type_support.cpp.o[0m
+[9.798s] [ 51%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/motor_setpoint__type_support.c.o[0m
+[9.834s] [ 53%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/mode__type_support.cpp.o[0m
+[9.920s] [ 54%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_msgs/msg/detail/cliff__type_support.c.o[0m
+[10.073s] [ 55%] [32m[1mLinking C shared library libcreate_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.121s] [ 56%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[10.251s] [ 56%] Built target create_msgs__rosidl_typesupport_introspection_c
+[10.289s] [ 58%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/play_song__type_support.cpp.o[0m
+[10.468s] [ 59%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/play_song__type_support.cpp.o[0m
+[10.597s] [ 60%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/play_song__type_support.cpp.o[0m
+[10.754s] [ 62%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/motor_setpoint__type_support.cpp.o[0m
+[10.854s] [ 63%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/charging_state__type_support_c.cpp.o[0m
+[11.690s] [ 64%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/motor_setpoint__type_support.cpp.o[0m
+[11.788s] [ 65%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_msgs/msg/cliff__type_support.cpp.o[0m
+[11.860s] [ 67%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/define_song__type_support_c.cpp.o[0m
+[11.912s] [ 68%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/motor_setpoint__type_support.cpp.o[0m
+[12.397s] [ 69%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_msgs/msg/detail/cliff__type_support.cpp.o[0m
+[12.814s] [ 70%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/mode__type_support_c.cpp.o[0m
+[12.824s] [ 72%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/play_song__type_support_c.cpp.o[0m
+[12.857s] [ 73%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_msgs/msg/detail/dds_fastrtps/cliff__type_support.cpp.o[0m
+[12.887s] [ 74%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/motor_setpoint__type_support_c.cpp.o[0m
+[12.927s] [ 75%] [32mBuilding CXX object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_msgs/msg/detail/cliff__type_support_c.cpp.o[0m
+[13.296s] [ 77%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_cpp.so[0m
+[13.476s] [ 77%] Built target create_msgs__rosidl_typesupport_cpp
+[13.731s] [ 78%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.038s] [ 78%] Built target create_msgs__rosidl_typesupport_fastrtps_cpp
+[14.074s] [ 79%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[14.188s] [ 81%] [32m[1mLinking CXX shared library libcreate_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[14.408s] [ 81%] Built target create_msgs__rosidl_typesupport_introspection_cpp
+[14.479s] [ 81%] Built target create_msgs__rosidl_typesupport_fastrtps_c
+[14.556s] [ 81%] Built target create_msgs
+[14.640s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[17.959s] [ 82%] Built target create_msgs__py
+[18.007s] [ 83%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_bumper_s.c.o[0m
+[18.018s] [ 84%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_charging_state_s.c.o[0m
+[18.019s] [ 86%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_play_song_s.c.o[0m
+[18.019s] [ 87%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_motor_setpoint_s.c.o[0m
+[18.024s] [ 88%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_define_song_s.c.o[0m
+[18.033s] [ 89%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_mode_s.c.o[0m
+[18.043s] [ 91%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_msgs/msg/_cliff_s.c.o[0m
+[18.409s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/libcreate_msgs__rosidl_generator_py.so[0m
+[18.458s] [ 92%] Built target create_msgs__rosidl_generator_py
+[18.489s] [ 93%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[18.489s] [ 94%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[18.495s] [ 96%] [32mBuilding C object CMakeFiles/create_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[18.652s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.706s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.714s] [ 98%] Built target create_msgs__rosidl_typesupport_fastrtps_c__pyext
+[18.727s] [100%] [32m[1mLinking C shared library rosidl_generator_py/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[18.752s] [100%] Built target create_msgs__rosidl_typesupport_c__pyext
+[18.772s] [100%] Built target create_msgs__rosidl_typesupport_introspection_c__pyext
+[18.787s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs -- -j8 -l8
+[18.789s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs
+[18.799s] -- Install configuration: ""
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/ament_index/resource_index/rosidl_interfaces/create_msgs
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.h
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.h
+[18.800s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.h
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/mode.h
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.h
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.h
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.h
+[18.801s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__functions.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__functions.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.h
+[18.802s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__functions.c
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.h
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__functions.c
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__functions.h
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.h
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__functions.c
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__functions.h
+[18.803s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.h
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.h
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.h
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__functions.h
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__functions.c
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__functions.h
+[18.804s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.h
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__functions.c
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__functions.c
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.h
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__functions.c
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.h
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__functions.h
+[18.805s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.h
+[18.806s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.h
+[18.806s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_c__visibility_control.h
+[18.806s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/library_path.sh
+[18.806s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/library_path.dsv
+[18.806s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_generator_c.so
+[18.806s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_generator_c.so" to ""
+[18.806s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.807s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.807s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.807s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.807s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_c.h
+[18.807s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_c.h
+[18.807s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_c.h
+[18.808s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_c.h
+[18.808s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h
+[18.808s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_c.h
+[18.808s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_c.h
+[18.808s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so
+[18.808s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.809s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.809s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.809s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.809s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.809s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.c
+[18.809s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.c
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_c.h
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_c.h
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.c
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_c.h
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.c
+[18.810s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_c.h
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_c.h
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.c
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.c
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_c.h
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.c
+[18.811s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_c.so
+[18.811s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_c.so" to ""
+[18.812s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_c.so
+[18.812s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_c.so" to ""
+[18.812s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.812s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.812s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/bumper.hpp
+[18.812s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/cliff.hpp
+[18.812s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.813s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__traits.hpp
+[18.813s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__struct.hpp
+[18.813s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__traits.hpp
+[18.813s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.hpp
+[18.813s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__builder.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__builder.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__struct.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__builder.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__builder.hpp
+[18.814s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__struct.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__traits.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__builder.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__traits.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.hpp
+[18.815s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__struct.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__builder.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__traits.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__traits.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__traits.hpp
+[18.816s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__struct.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__struct.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__struct.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__builder.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/mode.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/charging_state.hpp
+[18.817s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/define_song.hpp
+[18.818s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.818s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/motor_setpoint.hpp
+[18.818s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/play_song.hpp
+[18.818s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.818s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.818s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.818s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.818s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/dds_fastrtps
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_fastrtps_cpp.hpp
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_fastrtps_cpp.hpp
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_fastrtps_cpp.hpp
+[18.819s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_fastrtps_cpp.hpp
+[18.820s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_fastrtps_cpp.hpp
+[18.820s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so
+[18.820s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.820s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs
+[18.820s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg
+[18.820s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail
+[18.820s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__rosidl_typesupport_introspection_cpp.hpp
+[18.820s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__rosidl_typesupport_introspection_cpp.hpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__rosidl_typesupport_introspection_cpp.hpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/mode__type_support.cpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__rosidl_typesupport_introspection_cpp.hpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/define_song__type_support.cpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/cliff__type_support.cpp
+[18.821s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__type_support.cpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/motor_setpoint__type_support.cpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__rosidl_typesupport_introspection_cpp.hpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__rosidl_typesupport_introspection_cpp.hpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/charging_state__type_support.cpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/include/create_msgs/create_msgs/msg/detail/play_song__type_support.cpp
+[18.822s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so
+[18.823s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.823s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so
+[18.823s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_typesupport_cpp.so" to ""
+[18.823s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/pythonpath.sh
+[18.823s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/pythonpath.dsv
+[18.823s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info
+[18.823s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/dependency_links.txt
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/SOURCES.txt
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/top_level.txt
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs-3.1.0-py3.10.egg-info/PKG-INFO
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/__init__.py
+[18.824s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/libcreate_msgs__rosidl_generator_py.so
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_charging_state_s.c
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_mode_s.c
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_mode.py
+[18.825s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_define_song_s.c
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/__init__.py
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_motor_setpoint.py
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_cliff.py
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_motor_setpoint_s.c
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_cliff_s.c
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_define_song.py
+[18.826s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_bumper_s.c
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_play_song.py
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_charging_state.py
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_play_song_s.c
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_bumper.py
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[18.827s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_c.c
+[18.828s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.828s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[18.828s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/_create_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.874s] Listing '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs'...
+[18.874s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/__init__.py'...
+[18.874s] Listing '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/__init__.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_bumper.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_charging_state.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_cliff.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_define_song.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_mode.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_motor_setpoint.py'...
+[18.875s] Compiling '/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/msg/_play_song.py'...
+[18.880s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[18.881s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[18.881s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[18.881s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[18.881s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[18.882s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/local/lib/python3.10/dist-packages/create_msgs/create_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[18.882s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so
+[18.882s] -- Set runtime path of "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/lib/libcreate_msgs__rosidl_generator_py.so" to ""
+[18.883s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Bumper.idl
+[18.883s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/ChargingState.idl
+[18.883s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/DefineSong.idl
+[18.883s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Mode.idl
+[18.883s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/PlaySong.idl
+[18.884s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/MotorSetpoint.idl
+[18.884s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Cliff.idl
+[18.884s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Bumper.msg
+[18.884s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/ChargingState.msg
+[18.885s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/DefineSong.msg
+[18.885s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Mode.msg
+[18.885s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/PlaySong.msg
+[18.885s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/MotorSetpoint.msg
+[18.885s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/msg/Cliff.msg
+[18.886s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/ament_index/resource_index/package_run_dependencies/create_msgs
+[18.886s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/ament_index/resource_index/parent_prefix_path/create_msgs
+[18.886s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/ament_prefix_path.sh
+[18.887s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/ament_prefix_path.dsv
+[18.887s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/path.sh
+[18.887s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/environment/path.dsv
+[18.887s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/local_setup.bash
+[18.887s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/local_setup.sh
+[18.888s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/local_setup.zsh
+[18.888s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/local_setup.dsv
+[18.888s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/package.dsv
+[18.888s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/ament_index/resource_index/packages/create_msgs
+[18.889s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport.cmake
+[18.889s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cExport-noconfig.cmake
+[18.889s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[18.889s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[18.890s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport.cmake
+[18.890s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[18.890s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport.cmake
+[18.890s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[18.891s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_cppExport.cmake
+[18.891s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[18.891s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[18.891s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[18.892s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[18.892s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport.cmake
+[18.892s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[18.892s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport.cmake
+[18.893s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/export_create_msgs__rosidl_generator_pyExport-noconfig.cmake
+[18.893s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/rosidl_cmake-extras.cmake
+[18.893s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.893s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.894s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[18.894s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[18.894s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.895s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.895s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgsConfig.cmake
+[18.895s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/cmake/create_msgsConfig-version.cmake
+[18.895s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_msgs/share/create_msgs/package.xml
+[18.898s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_msgs

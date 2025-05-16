@@ -1,0 +1,14 @@
+msg/Bumper.idl
+msg/Bumper.msg
+msg/ChargingState.idl
+msg/ChargingState.msg
+msg/Cliff.idl
+msg/Cliff.msg
+msg/DefineSong.idl
+msg/DefineSong.msg
+msg/Mode.idl
+msg/Mode.msg
+msg/MotorSetpoint.idl
+msg/MotorSetpoint.msg
+msg/PlaySong.idl
+msg/PlaySong.msg

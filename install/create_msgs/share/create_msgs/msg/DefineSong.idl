@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from create_msgs/msg/DefineSong.msg
+// generated code does not contain a copyright notice
+
+
+module create_msgs {
+  module msg {
+    struct DefineSong {
+      @verbatim (language="comment", text=
+        "song number")
+      @unit (value="0-3")
+      uint8 song;
+
+      @verbatim (language="comment", text=
+        "song length")
+      @unit (value="1-16")
+      uint8 length;
+
+      @verbatim (language="comment", text=
+        "notes defined by the MIDI note numbering scheme. Notes outside the range of are rest notes.")
+      @unit (value="31-127")
+      sequence<uint8> notes;
+
+      @verbatim (language="comment", text=
+        "durations in seconds. Maximum duration is 255/64.")
+      sequence<float> durations;
+    };
+  };
+};

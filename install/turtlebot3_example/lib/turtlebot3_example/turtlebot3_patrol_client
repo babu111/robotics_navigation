@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'turtlebot3-example','console_scripts','turtlebot3_patrol_client'
+# EASY-INSTALL-ENTRY-SCRIPT: 'turtlebot3-example==2.1.5','console_scripts','turtlebot3_patrol_client'
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
-__requires__ = 'turtlebot3-example'
+__requires__ = 'turtlebot3-example==2.1.5'
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('turtlebot3-example', 'console_scripts', 'turtlebot3_patrol_client')())
+    sys.exit(load_entry_point('turtlebot3-example==2.1.5', 'console_scripts', 'turtlebot3_patrol_client')())
