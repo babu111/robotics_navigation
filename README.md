@@ -64,7 +64,7 @@ Run the following blocks of commands each in a separate terminal.
     cd /home/gixadmin/robotics_navigation
     ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml
     # use A* algorithm
-    ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml planner_server.GridBased.use_astar:=True
+    ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml planner_server.GridBased.use_astar:=True params_file:=nav2_params.yaml
     ```
 
 4. Start RViz2:
