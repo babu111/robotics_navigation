@@ -58,13 +58,13 @@ Run the following blocks of commands each in a separate terminal.
    ros2 run turtlebot3_teleop teleop_keyboard
    ```
 
-3. Launch the `nav2` stack with Jason's map:
+3. Launch the `nav2` stack with Jason's map from the /maps folder:
 
     ```bash
     cd /home/gixadmin/robotics_navigation
-    ros2 launch nav2_bringup bringup_launch.py map:=map_kitchen.yaml
+    ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml
     # use A* algorithm
-    ros2 launch nav2_bringup bringup_launch.py map:=map_kitchen.yaml planner_server.GridBased.use_astar:=True
+    ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml planner_server.GridBased.use_astar:=True
     ```
 
 4. Start RViz2:
