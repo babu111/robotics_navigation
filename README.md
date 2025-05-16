@@ -35,7 +35,9 @@ Exit raspi-config: Follow the prompts to save the changes and exi
 Run the following blocks of commands each in a separate terminal.
 
 
-
+0. Run the tf transform publisher:
+   ```bash
+   ros2 run tf2_ros static_transform_publisher 0 0 0.35 0 0 0 base_link laser
 ~~0. Open fastdds discovery in a terminal:~~
 
 1. Launch the turtlebot:
