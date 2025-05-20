@@ -8,6 +8,8 @@ from c8nav.msg import Nav2Status
 import math
 import time
 from nav2_msgs.action import NavigateToPose
+from nav2_msgs.action._navigate_to_pose import NavigateToPose_FeedbackMessage
+
 
 
 class Nav2StatusPublisher(Node):
@@ -16,9 +18,9 @@ class Nav2StatusPublisher(Node):
 
         # Subscriptions
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        self.create_subscription(PoseStamped, '/goal_pose', self.goal_callback, 10)
+        # self.create_subscription(PoseStamped, '/goal_pose', self.goal_callback, 10)
         self.create_subscription(
-            NavigateToPose.Feedback,
+            NavigateToPose_FeedbackMessage,
             '/navigate_to_pose/_action/feedback',
             self.feedback_callback,
             10
@@ -31,18 +33,22 @@ class Nav2StatusPublisher(Node):
         self.create_timer(0.5, self.publish_status)
 
         self.current_position = None
-        self.goal_position = None
+        self.goal_position = Point()
+        self.distance_remaining = 0.0
+        self.estimated_time_remaining = 0.0
         self.last_time = self.get_clock().now().seconds_nanoseconds()[0]
 
     def odom_callback(self, msg: Odometry):
+        self.get_logger().info("Received odom")
         self.current_position = msg.pose.pose.position
 
     def goal_callback(self, msg: PoseStamped):
+        self.get_logger().info("Received goal")
         self.goal_position = msg.pose.position
 
-    def feedback_callback(self, msg: NavigateToPose.Feedback):
-        self.distance_remaining = msg.distance_remaining
-        self.estimated_time_remaining = msg.estimated_time_remaining
+    def feedback_callback(self, msg: NavigateToPose_FeedbackMessage):
+        self.distance_remaining = msg.feedback.distance_remaining
+        self.estimated_time_remaining = msg.feedback.estimated_time_remaining
         self.get_logger().info(
             f"[Nav2 ETA] Remaining: {self.distance_remaining:.2f} m, "
             f"ETA: {self.estimated_time_remaining:.1f} s"
@@ -52,14 +58,8 @@ class Nav2StatusPublisher(Node):
         return math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
 
     def publish_status(self):
-        if self.current_position is None or self.goal_position is None:
+        if self.current_position is None:
             return
-
-        distance = self.compute_distance(self.current_position, self.goal_position)
-
-        # Assume a rough average speed in m/s
-        speed_estimate = 0.2
-        time_estimate = distance / speed_estimate if speed_estimate > 0 else float('inf')
 
         msg = Nav2Status()
         msg.position = self.current_position
