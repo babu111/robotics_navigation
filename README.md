@@ -16,14 +16,24 @@
 - Able to use python code to give nav goal in coordinates and let turtlebot navigate to that spot.
 ---
 
-## Path Planning with GUI (Zeyi)
+## Configuring Environment
 
-**path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
 ### Installation
 The ROS2 env given by the IT shop boys is buggy. Consider reinstalling [ROS2](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html).
 
-Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace installation.
+```
+git clone git@github.com:babu111/robotics_navigation.git
+cd robotics_navigation
+colcon build
+```
+
+(Optional) Run `turtlebot_ws/install_turtlebot_dependencies.sh` for turtlebot workspace installation if previous installation fails.
+
+
+## Path Planning with GUI (Zeyi)
+
+**path planning** algorithms like Dijkstra's and A\* (A-star) are implemented in the `nav2` stack.
 
 ### Step-by-step Instructions:
 (for turtlebot)
