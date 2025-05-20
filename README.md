@@ -68,7 +68,7 @@ Run the following blocks of commands each in a separate terminal.
 
     ```bash
     cd /home/gixadmin/robotics_navigation
-    ros2 launch nav2_bringup bringup_launch.py map:=map_v4.yaml
+    ros2 launch nav2_bringup bringup_launch.py map:=maps/map_v4.yaml
 
     # We found that using the nav2_params and the a* was worse
     ```
