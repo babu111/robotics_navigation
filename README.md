@@ -118,6 +118,53 @@ This is to help you get the ip of the robot when you can't ssh onto it.
 
 ---
 
+## Path Planning with code (Zeyi)
+
+First configure the environment.
+```
+cd ~/robotics_navigation
+colcon build --packages-select c8nav
+source install/setup.bash
+```
+
+To use path planning, first follow step 1-5 of section "Path Planning with GUI".
+
+Then use the `send_goal.py` in `nav_ws`.
+```
+ros2 run c8nav send_goal --x -8.0 --y 1.5 --theta 1.57
+```
+
+## Save current robot position and navigate to saved position(Yuxin)
+First configure the environment.
+```
+cd ~/robotics_navigation
+colcon build --packages-select c8nav
+source install/setup.bash
+```
+
+To save the robot's current position on the map(eg. sink):
+```
+ros2 run c8nav save_current_pose --name sink
+```
+The position will be saved to robotics_navigation/saved_goals.yaml (currently there are pick_up/wall/sink/elevator/sofa/lab)
+
+To navigate to a saved position(eg. sink):
+```
+ros2 run c8nav get_goal --name sink
+```
+
+
+## Publishing current robot position, distance to goal and estimated time to goal to a topic (Zeyi)
+
+Run:
+```
+cd /robotics_navigation
+ros2 run c8nav nav_ws/c8nav/src/c8nav/nav2_status_publisher.py
+```
+
+
+---
+
 ## Mapping With the Physical TurtleBot
 
 Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the Robotics Lab.
@@ -161,39 +208,3 @@ Testing the global planners (Dijkstra and A*) using a physical TurtleBot in the 
     ```
     
     This lets you visually compare how each planner adapts to obstacles in real-time.
-
-
-## Path Planning with code (Zeyi)
-
-First configure the environment.
-```
-cd ~/robotics_navigation
-colcon build --packages-select c8nav
-source install/setup.bash
-```
-
-To use path planning, first follow step 1-5 of section "Path Planning with GUI".
-
-Then use the `send_goal.py` in `nav_ws`.
-```
-ros2 run c8nav send_goal --x -8.0 --y 1.5 --theta 1.57
-```
-
-## Save current robot position and navigate to saved position(Yuxin)
-First configure the environment.
-```
-cd ~/robotics_navigation
-colcon build --packages-select c8nav
-source install/setup.bash
-```
-
-To save the robot's current position on the map(eg. sink):
-```
-ros2 run c8nav save_current_pose --name sink
-```
-The position will be saved to robotics_navigation/saved_goals.yaml (currently there are pick_up/wall/sink/elevator/sofa/lab)
-
-To navigate to a saved position(eg. sink):
-```
-ros2 run c8nav get_goal --name sink
-```
