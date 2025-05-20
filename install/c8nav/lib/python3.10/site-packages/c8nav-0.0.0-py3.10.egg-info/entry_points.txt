@@ -1,5 +1,0 @@
-[console_scripts]
-get_goal = c8nav.get_goal:main
-save_current_pose = c8nav.save_current_pose:main
-send_goal = c8nav.send_goal:main
-

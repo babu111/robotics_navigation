@@ -1,5 +1,5 @@
 CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o: \
- /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc \
+ /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc \
  /usr/include/stdc-predef.h /usr/include/ignition/math6/ignition/math.hh \
  /usr/include/ignition/math6/gz/math.hh \
  /usr/include/ignition/math6/gz/math/config.hh \

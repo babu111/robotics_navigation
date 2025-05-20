@@ -1,1 +1,1 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_description/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin

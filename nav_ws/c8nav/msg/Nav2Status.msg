@@ -1,0 +1,3 @@
+geometry_msgs/Point position
+float64 distance_to_goal
+float64 estimated_time_to_goal

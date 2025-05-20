@@ -1,9 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/uninstall.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/create_description_uninstall.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/test.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/edit_cache.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/rebuild_cache.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/list_install_components.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/install.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/install/local.dir
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description/CMakeFiles/install/strip.dir

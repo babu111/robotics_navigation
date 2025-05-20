@@ -1,1 +1,2 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3/ament_cmake_environment_hooks/local_setup.dsv
+source;share/turtlebot3/environment/ament_prefix_path.sh
+source;share/turtlebot3/environment/path.sh

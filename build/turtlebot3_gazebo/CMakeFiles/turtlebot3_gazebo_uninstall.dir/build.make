@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo
+CMAKE_SOURCE_DIR = /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo
+CMAKE_BINARY_DIR = /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo
 
 # Utility rule file for turtlebot3_gazebo_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/turtlebot3_gazebo_uninstall.dir/compiler_depend.make
 include CMakeFiles/turtlebot3_gazebo_uninstall.dir/progress.make
 
 CMakeFiles/turtlebot3_gazebo_uninstall:
-	/usr/bin/cmake -P /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 turtlebot3_gazebo_uninstall: CMakeFiles/turtlebot3_gazebo_uninstall
 turtlebot3_gazebo_uninstall: CMakeFiles/turtlebot3_gazebo_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/turtlebot3_gazebo_uninstall.dir/clean:
 .PHONY : CMakeFiles/turtlebot3_gazebo_uninstall.dir/clean
 
 CMakeFiles/turtlebot3_gazebo_uninstall.dir/depend:
-	cd /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_gazebo/CMakeFiles/turtlebot3_gazebo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo /home/gixadmin/robotics_navigation/build/turtlebot3_gazebo/CMakeFiles/turtlebot3_gazebo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/turtlebot3_gazebo_uninstall.dir/depend
 

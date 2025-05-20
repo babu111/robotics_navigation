@@ -1,7 +1,7 @@
 CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o: \
- /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp \
+ /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo/src/turtlebot3_drive.cpp \
  /usr/include/stdc-predef.h \
- /home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.hpp \
+ /home/gixadmin/robotics_navigation/turtlebot_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/turtlebot3_gazebo/turtlebot3_drive.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
