@@ -169,7 +169,7 @@ ros2 run c8nav get_goal --name sink
 Run:
 ```
 cd /robotics_navigation
-ros2 run c8nav nav_ws/c8nav/src/c8nav/nav2_status_publisher.py
+ros2 run c8nav nav2_status_publisher.py
 ```
 
 View the topic at
