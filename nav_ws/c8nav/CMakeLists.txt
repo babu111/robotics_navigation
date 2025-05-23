@@ -31,4 +31,6 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+ament_export_dependencies(rosidl_default_runtime)
+
 ament_package()
