@@ -1,0 +1,32 @@
+[ 22%] Built target create
+[ 27%] Built target bumpers
+[ 33%] Built target play_song
+[ 41%] Built target cliffs
+[ 44%] Built target wheeldrop
+[ 50%] Built target battery_level
+[ 55%] Built target drive_circle
+[ 66%] Built target packets
+[ 61%] Built target leds
+[ 72%] Built target test_serial_stream
+[ 77%] Built target test_robot_model
+[ 83%] Built target test_create
+[ 88%] Built target test_data
+[ 94%] Built target test_packet
+[100%] Built target test_serial_query
+-- Install configuration: ""
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/libcreate.so
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/util.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/types.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_query.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/packet.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/create.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/serial_stream.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/include/create/data.h
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config.cmake
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-config-version.cmake
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets.cmake
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/lib/cmake/libcreate/libcreate-targets-noconfig.cmake
+-- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/libcreate/share/libcreate/package.xml

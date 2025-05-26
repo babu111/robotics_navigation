@@ -1,0 +1,35 @@
+[0.115s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description -- -j8 -l8
+[0.232s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description -- -j8 -l8
+[0.266s] Invoking command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description
+[0.304s] -- Install configuration: ""
+[0.304s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/launch
+[0.305s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/launch/create_1.launch
+[0.305s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/launch/roomba_400.launch
+[0.305s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/launch/create_2.launch
+[0.305s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/meshes
+[0.305s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/meshes/create_2.dae
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/meshes/create_1.tga
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/meshes/create_1.dae
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_2_gazebo.urdf.xacro
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_base_gazebo.urdf.xacro
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_2.urdf.xacro
+[0.313s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_1_gazebo.urdf.xacro
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_1.urdf.xacro
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/urdf/create_base.urdf.xacro
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/ament_index/resource_index/package_run_dependencies/create_description
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/ament_index/resource_index/parent_prefix_path/create_description
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/environment/ament_prefix_path.sh
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/environment/ament_prefix_path.dsv
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/environment/path.sh
+[0.314s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/environment/path.dsv
+[0.315s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/local_setup.bash
+[0.315s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/local_setup.sh
+[0.315s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/local_setup.zsh
+[0.315s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/local_setup.dsv
+[0.315s] -- Installing: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/package.dsv
+[0.315s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/ament_index/resource_index/packages/create_description
+[0.322s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/cmake/create_descriptionConfig.cmake
+[0.322s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/cmake/create_descriptionConfig-version.cmake
+[0.322s] -- Up-to-date: /home/gixstudent/Desktop/Final_lab/robotics_navigation/install/create_description/share/create_description/package.xml
+[0.356s] Invoked command in '/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gixstudent/Desktop/Final_lab/robotics_navigation/build/create_description

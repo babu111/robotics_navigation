@@ -46,6 +46,7 @@ class QRCodePoseEstimator(Node):
         data, bbox, _ = self.qr_detector.detectAndDecode(frame)
 
         # Only proceed if bbox is valid
+        self.get_logger().info("=" * 50)
         if bbox is not None and bbox.shape[1] == 4:
             area = cv2.contourArea(bbox.astype(np.float32))
             if area > 0 and data:

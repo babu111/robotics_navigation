@@ -22,7 +22,9 @@ setup(
         'console_scripts': [
             'send_goal = c8nav.send_goal:main',
             'save_current_pose = c8nav.save_current_pose:main',
-            'get_goal = c8nav.get_goal:main'
+            'get_goal = c8nav.get_goal:main',
+            'send_goal_qr_code = c8nav.send_goal_qr_code:main',
+            'qr_code_aruco_create = c8nav.qr_code_aruco_create:main',
         ],
     },
 )

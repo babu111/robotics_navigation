@@ -1,0 +1,5 @@
+  File "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav/send_goal.py", line 7
+    from sensor_msgs.msg import Image\ nfrom cv_bridge import CvBridge
+                                      ^
+SyntaxError: unexpected character after line continuation character
+

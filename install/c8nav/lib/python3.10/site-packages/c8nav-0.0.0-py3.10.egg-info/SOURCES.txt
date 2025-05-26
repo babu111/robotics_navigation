@@ -10,8 +10,14 @@ setup.py
 ../../build/c8nav/c8nav.egg-info/zip-safe
 c8nav/__init__.py
 c8nav/get_goal.py
+c8nav/get_goal_copy.py
+c8nav/get_goal_jason.py
+c8nav/pose_estimate.py
+c8nav/qr_code_aruco_create.py
+c8nav/qr_code_direct_navigator.py
 c8nav/save_current_pose.py
 c8nav/send_goal.py
+c8nav/send_goal_qr_code.py
 resource/c8nav
 test/test_copyright.py
 test/test_flake8.py
