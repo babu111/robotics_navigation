@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/rosidl_typesupport_introspection_c/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_introspection_c.h

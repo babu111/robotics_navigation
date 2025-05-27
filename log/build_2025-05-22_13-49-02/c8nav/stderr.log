@@ -1,5 +1,0 @@
-  File "/home/gixstudent/Desktop/Final_lab/robotics_navigation/install/c8nav/lib/python3.10/site-packages/c8nav/send_goal_qr_code.py", line 154
-    twist.angular.
-                  ^
-SyntaxError: invalid syntax
-

@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/rosidl_generator_cpp/turtlebot3_msgs/msg/detail/version_info__struct.hpp

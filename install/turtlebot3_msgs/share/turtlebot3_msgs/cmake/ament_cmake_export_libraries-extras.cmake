@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

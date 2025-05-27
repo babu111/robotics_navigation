@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_bringup/ament_cmake_core/turtlebot3_bringupConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

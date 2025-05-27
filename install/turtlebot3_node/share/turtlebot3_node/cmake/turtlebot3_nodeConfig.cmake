@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_node/ament_cmake_core/turtlebot3_nodeConfig.cmake

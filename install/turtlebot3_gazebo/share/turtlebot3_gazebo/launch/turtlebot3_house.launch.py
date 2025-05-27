@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3_simulations/turtlebot3_gazebo/launch/turtlebot3_house.launch.py

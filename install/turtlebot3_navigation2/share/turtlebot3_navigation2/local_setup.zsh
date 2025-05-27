@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/build/turtlebot3_navigation2/ament_cmake_environment_hooks/local_setup.zsh

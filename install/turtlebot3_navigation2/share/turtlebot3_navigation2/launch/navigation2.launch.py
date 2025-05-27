@@ -1,1 +1,0 @@
-/home/gixstudent/Desktop/Final_lab/robotics_navigation/src/turtlebot3/turtlebot3_navigation2/launch/navigation2.launch.py
