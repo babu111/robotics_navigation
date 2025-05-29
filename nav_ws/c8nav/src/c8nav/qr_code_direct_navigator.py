@@ -80,7 +80,7 @@ class TimeBasedQRNavigator(Node):
         else:
             self._stop()
             self.get_logger().info("✅ Rotation complete. Start moving forward.")
-            distance = math.hypot(self.x, self.y) + 0.3  # add a small buffer to ensure we reach the target
+            distance = math.hypot(self.x, self.y) + 0.8  # add a small buffer to ensure we reach the target
             self.motion_duration = distance / self.linear_speed
             self.state = 'move_forward'
             self.state_start_time = self._now()

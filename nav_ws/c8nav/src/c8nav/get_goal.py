@@ -96,8 +96,9 @@ class LocationSubscriber(Node):
 
 
 def main(args=None):
-    # delivery_and_return("sink")
-    # return
+    rclpy.init(args=args)
+    delivery_and_return("sink")
+    return
 
     
     rclpy.init(args=args)

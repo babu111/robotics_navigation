@@ -72,7 +72,7 @@ def move_back(distance, speed=0.2):
     :param speed: Linear speed in m/s (default 0.2)
     """
     # Initialize the ROS2 node
-    rclpy.init()
+    # rclpy.init()
     node = rclpy.create_node('simple_backward_mover')
 
     pub = node.create_publisher(Twist, '/cmd_vel', 10)
