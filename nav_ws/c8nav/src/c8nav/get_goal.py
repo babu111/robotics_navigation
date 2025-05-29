@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import yaml
 import os
 import subprocess
@@ -5,8 +7,8 @@ import argparse
 import sys
 import time
 
-from c8nav.qr_code_aruco_create import docking
-from c8nav.pose_estimate import publish_initial_pose, move_back
+from qr_code_aruco_create import docking
+from pose_estimate import publish_initial_pose, move_back
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -37,10 +39,13 @@ def delivery_and_return (name_of_location):
         move_back(1)
         publish_initial_pose(pick_up_x, pick_up_y, pick_up_theta)
 
-        subprocess.run([
-            'ros2', 'run', 'c8nav', 'send_goal',
-            '--x', str(x), '--y', str(y), '--theta', str(theta)
-        ], check=True)
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {x} --y {y} --theta {theta}"
+        )
+
+        subprocess.run(command, shell=True, check=True)
+
         #  ## OPEN LID
         # print('Sleeping for 10 seconds to allow for pickup.')
         # time.sleep(5)
@@ -48,9 +53,14 @@ def delivery_and_return (name_of_location):
         publish_initial_pose(x, y, theta)
 
         print('Go back to pick up goal')
-        subprocess.run([
-            'ros2', 'run', 'c8nav', 'send_goal',
-            '--x', str(pick_up_x), '--y', str(pick_up_y), '--theta', str(pick_up_theta), ], check=True)
+
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {pick_up_x} --y {pick_up_y} --theta {pick_up_theta}"
+        )
+
+        subprocess.run(command, shell=True, check=True)
+
         docking()
          ## OPEN LID
          ## CLOSE LID
@@ -78,7 +88,7 @@ class LocationSubscriber(Node):
 
 
 def main(args=None):
-    delivery_and_return("sink")
+    delivery_and_return("wall")
     return
     rclpy.init(args=args)
     location_subscriber = LocationSubscriber()

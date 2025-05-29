@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseWithCovarianceStamped
@@ -78,7 +80,7 @@ def move_back(distance, speed=0.2):
     twist.linear.x = -abs(speed)  # Ensure it's moving backward
 
     duration = distance / speed  # Total time to move
-    rate = 3  # Hz
+    rate = 20  # Hz
     interval = 1.0 / rate
     ticks = int(duration * rate)
 

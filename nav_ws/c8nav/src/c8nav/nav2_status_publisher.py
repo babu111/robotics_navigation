@@ -2,6 +2,10 @@
 
 import rclpy
 from rclpy.node import Node
+from rcl_interfaces.msg import ParameterDescriptor
+from tf2_ros import Buffer, TransformListener
+from geometry_msgs.msg import TransformStamped
+
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import PoseStamped, Point
 from c8nav.msg import Nav2Status
@@ -16,9 +20,10 @@ class Nav2StatusPublisher(Node):
     def __init__(self):
         super().__init__('nav2_status_publisher')
 
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
         # Subscriptions
-        self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        # self.create_subscription(PoseStamped, '/goal_pose', self.goal_callback, 10)
         self.create_subscription(
             NavigateToPose_FeedbackMessage,
             '/navigate_to_pose/_action/feedback',
@@ -28,7 +33,6 @@ class Nav2StatusPublisher(Node):
 
         # Publisher
         self.status_pub = self.create_publisher(Nav2Status, '/nav2_status', 10)
-        # self.status_sub = self.create_subscription(Nav2Status, '/nav2_status', self.status_callback, 10)
 
         # Timer to publish status periodically
         self.create_timer(1, self.publish_status)
@@ -39,9 +43,8 @@ class Nav2StatusPublisher(Node):
         self.estimated_time_remaining = 0.0
         self.last_time = self.get_clock().now().seconds_nanoseconds()[0]
 
-    def odom_callback(self, msg: Odometry):
-        # self.get_logger().info("Received odom")
-        self.current_position = msg.pose.pose.position
+        self.declare_parameter('ready', False, ParameterDescriptor(description='Robot navigation readiness'))
+
 
     def goal_callback(self, msg: PoseStamped):
         # self.get_logger().info("Received goal")
@@ -55,17 +58,22 @@ class Nav2StatusPublisher(Node):
 
         duration = msg.feedback.estimated_time_remaining
         self.estimated_time_remaining = duration.sec + duration.nanosec * 1e-9
-        # self.get_logger().info(
-        #     f"[Nav2 ETA] Remaining: {self.distance_remaining} m, "
-        #     f"ETA: {self.estimated_time_remaining} s"
-        # )
 
     def compute_distance(self, p1: Point, p2: Point):
         return math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
 
     def publish_status(self):
-        if self.current_position is None:
-            return
+
+        try:
+            now = rclpy.time.Time()
+            transform: TransformStamped = self.tf_buffer.lookup_transform(
+                'map', 'base_link', now, timeout=rclpy.duration.Duration(seconds=2.0))
+
+            self.current_position.x = transform.transform.translation.x
+            self.current_position.y = transform.transform.translation.y
+
+        except Exception as ex:
+            self.get_logger().warn(f"Transform unavailable: {ex}")
 
         msg = Nav2Status()
         msg.position = self.current_position
