@@ -78,7 +78,7 @@ def move_back(distance, speed=0.2):
     twist.linear.x = -abs(speed)  # Ensure it's moving backward
 
     duration = distance / speed  # Total time to move
-    rate = 10  # Hz
+    rate = 3  # Hz
     interval = 1.0 / rate
     ticks = int(duration * rate)
 

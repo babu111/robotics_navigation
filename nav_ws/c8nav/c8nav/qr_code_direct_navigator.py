@@ -18,7 +18,7 @@ class TimeBasedQRNavigator(Node):
 
         # Speed configurations
         self.linear_speed = 0.1  # m/s
-        self.angular_speed = 0.05 # rad/s
+        self.angular_speed = 0.1 # rad/s
 
         # Target pose container
         self.qr_pose = None
@@ -49,9 +49,9 @@ class TimeBasedQRNavigator(Node):
         self.x = msg.x
         self.y = msg.y
         self.theta = msg.theta
-        self.angle_tan = math.atan2(y, x)
+        self.angle_tan = math.atan2(y, x) /2
         self.get_logger().info(f"✅ Received QR Pose: x={x:.2f}, y={y:.2f}, θ={math.degrees(theta):.1f}°, "
-                               f"angle_tan={self.angle_tan:.1f} rad")
+                               f"angle_tan={math.degrees(self.angle_tan):.1f}°")
 
 
 
@@ -80,7 +80,7 @@ class TimeBasedQRNavigator(Node):
         else:
             self._stop()
             self.get_logger().info("✅ Rotation complete. Start moving forward.")
-            distance = math.hypot(self.x, self.y)
+            distance = math.hypot(self.x, self.y) + 0.1  # add a small buffer to ensure we reach the target
             self.motion_duration = distance / self.linear_speed
             self.state = 'move_forward'
             self.state_start_time = self._now()
@@ -96,24 +96,29 @@ class TimeBasedQRNavigator(Node):
             self.cmd_pub.publish(cmd)
         else:
             self._stop()
-            self.get_logger().info("✅ Arrived in front of QR. Rotating to face QR.")
-            alpha = -1 * (math.pi + self.theta)
-            beta = self.angle_tan
-            self.turn_angle = beta - alpha
-            self.motion_duration = abs(self.turn_angle) / self.angular_speed + 0.1  # add a small buffer
-            self.turn_direction = 1 if self.turn_angle > 0 else -1
-            self.state = 'rotate_to_face_qr'
-            self.state_start_time = self._now()
-            self.get_logger().info(
-                f"🔁 Final rotation to face QR {math.degrees(self.angle_tan- self.theta):.1f}°, "
-                f"duration {self.motion_duration:.2f}s"
-            )
+
+            self.get_logger().info("🎯 Mission complete. Robot is aligned and positioned.")
+            self.state = 'done'
+            rclpy.shutdown()
+            # self.get_logger().info("✅ Arrived in front of QR. Rotating to face QR.")
+            # alpha = -1 * (math.pi + self.theta)
+            # beta = self.angle_tan
+            # self.turn_angle = beta - alpha
+            # self.motion_duration = abs(self.turn_angle) / self.angular_speed  # add a small buffer
+            # self.turn_direction = 1 if self.turn_angle > 0 else -1
+            # self.state = 'rotate_to_face_qr'
+            # self.state_start_time = self._now()
+            # self.get_logger().info(
+            #     f"🔁 Final rotation to face QR {math.degrees(self.turn_angle):.1f}°, "
+            #     f"duration {self.motion_duration:.2f}s"
+            # )
 
     def _handle_rotate_to_face_qr(self):
         elapsed = self._now() - self.state_start_time
         if elapsed < self.motion_duration:
             cmd = Twist()
             cmd.angular.z = self.angular_speed * self.turn_direction
+            self.cmd_pub.publish(cmd)
         else:
             self._stop()
             self.get_logger().info("🎯 Mission complete. Robot is aligned and positioned.")
