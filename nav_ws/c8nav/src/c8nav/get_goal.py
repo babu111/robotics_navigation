@@ -5,13 +5,38 @@ import os
 import subprocess
 import argparse
 import sys
+import time
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--name', required=True, help='Goal name to send (e.g., sofa)')
-    args = parser.parse_args()
+from qr_code_aruco_create import docking
+from pose_estimate import publish_initial_pose, move_back
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
+from std_srvs.srv import Trigger
 
-    yaml_path = "saved_goals.yaml"
+def open_lid():
+    for i in range(5):
+        command = (
+            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"'
+        )
+
+        process = subprocess.Popen(command, shell=True)
+        time.sleep(0.5)
+        process.terminate()
+
+def close_lid():
+    for i in range(5):
+        command = (
+            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"'
+        )
+
+        process = subprocess.Popen(command, shell=True)
+        time.sleep(0.5)
+        process.terminate()
+
+
+def delivery_and_return (name_of_location):
+    yaml_path = "maps/saved_goals.yaml"
     if not os.path.exists(yaml_path):
         print(f'Error: Goal file not found at {yaml_path}')
         sys.exit(1)
@@ -21,23 +46,116 @@ def main():
 
     print(f)
 
-    if args.name not in goals:
-        print(f'Error: Goal name "{args.name}" not found in file.')
+    if name_of_location not in goals:
+        print(f'Error: Goal name "{name_of_location}" not found in file.')
         print(f'Available goals: {list(goals.keys())}')
         sys.exit(1)
 
-    goal = goals[args.name]
+    goal = goals[name_of_location]
     x, y, theta = goal['x'], goal['y'], goal['theta']
-    print(f'Sending goal "{args.name}": x={x}, y={y}, theta={theta}')
+    print(f'Sending goal "{name_of_location}": x={x}, y={y}, theta={theta}')
 
+    pick_up_goal = goals['pick_up']
+    pick_up_x, pick_up_y, pick_up_theta = pick_up_goal['x'], pick_up_goal['y'], pick_up_goal['theta']
     try:
-        subprocess.run([
-            'ros2', 'run', 'c8nav', 'send_goal',
-            '--x', str(x), '--y', str(y), '--theta', str(theta)
-        ], check=True)
+        # print("Set ready status to false.")
+        # subprocess.run([
+        #     'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'false'
+        # ])
+
+        close_lid()
+
+        move_back(1)
+        publish_initial_pose(pick_up_x, pick_up_y, pick_up_theta)
+
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {x} --y {y} --theta {theta}"
+        )
+
+        subprocess.run(command, shell=True, check=True)
+
+        #  ## OPEN LID
+        # print('Sleeping for 10 seconds to allow for pickup.')
+        # time.sleep(5)
+        # ## CLOSE LID
+        open_lid()
+        time.sleep(5)
+        close_lid()
+
+
+        publish_initial_pose(x, y, theta)
+
+        print('Go back to pick up goal')
+
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {pick_up_x} --y {pick_up_y} --theta {pick_up_theta}"
+        )
+
+        subprocess.run(command, shell=True, check=True)
+
+        docking()
+        open_lid()
+
+       
+
     except subprocess.CalledProcessError as e:
         print(f'Failed to execute send_goal.py: {e}')
         sys.exit(1)
 
-if __name__ == '__main__':
+
+
+class DestinationClient(Node):
+    def __init__(self):
+        super().__init__("destination_client")
+        self.cli = self.create_client(Trigger, "get_destination")
+        self.in_progress = False
+
+        self.get_logger().info("⏳ Waiting for /get_destination …")
+        self.cli.wait_for_service()
+        self.get_logger().info("🟢 Service available")
+
+        # Poll every 5 seconds
+        self.timer = self.create_timer(5.0, self.request_destination)
+
+    def request_destination(self):
+        self.get_logger().info("Requesting destination...")
+        if self.in_progress:
+            self.get_logger().info("⏳ Delivery in progress, skipping request.")
+            return
+
+        req = Trigger.Request()
+        future = self.cli.call_async(req)
+        future.add_done_callback(self.destination_callback)
+
+    def destination_callback(self, future):
+        self.get_logger().info("Destination callback received")
+        try:
+            resp = future.result()
+            self.get_logger().info(f"Resp: {resp}")
+            if resp.success:
+                self.get_logger().info(f"📦 New destination: {resp.message!r}")
+                self.in_progress = True
+
+                # Run delivery (blocking call)
+                delivery_and_return(resp.message)
+
+                self.get_logger().info("✅ Delivery complete")
+                self.in_progress = False
+            else:
+                self.get_logger().warn("⚠️ No destination stored yet.")
+        except Exception as e:
+            self.get_logger().error(f"❌ Service call failed: {e}")
+
+def main(args=None):
+
+    rclpy.init(args=args)
+    delivery_and_return("sink")
+    # node = DestinationClient()
+    # rclpy.spin(node)
+    # node.destroy_node()
+    # rclpy.shutdown()
+
+if __name__ == "__main__":
     main()

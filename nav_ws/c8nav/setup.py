@@ -23,7 +23,8 @@ setup(
             'send_goal = c8nav.send_goal:main',
             'save_current_pose = c8nav.save_current_pose:main',
             'get_goal = c8nav.get_goal:main',
-            'nav2_status_publisher = c8nav.nav2_status_publisher:main'
+            'nav2_status_publisher = c8nav.nav2_status_publisher:main',
+
         ],
     },
 )
