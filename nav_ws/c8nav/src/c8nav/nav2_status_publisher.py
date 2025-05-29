@@ -43,7 +43,7 @@ class Nav2StatusPublisher(Node):
         self.estimated_time_remaining = 0.0
         self.last_time = self.get_clock().now().seconds_nanoseconds()[0]
 
-        self.declare_parameter('ready', False, ParameterDescriptor(description='Robot navigation readiness'))
+        self.declare_parameter('ready', True, ParameterDescriptor(description='Robot navigation readiness'))
 
 
     def goal_callback(self, msg: PoseStamped):

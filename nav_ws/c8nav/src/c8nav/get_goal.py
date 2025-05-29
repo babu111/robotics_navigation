@@ -12,6 +12,18 @@ from pose_estimate import publish_initial_pose, move_back
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+from std_srvs.srv import Trigger
+
+def open_lid():
+    for i in range(5):
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)
+        time.sleep(0.4)
+
+def close_lid():
+    for i in range(5):
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"', shell=True)
+        time.sleep(0.4)
+
 
 def delivery_and_return (name_of_location):
     yaml_path = "maps/saved_goals.yaml"
@@ -36,6 +48,13 @@ def delivery_and_return (name_of_location):
     pick_up_goal = goals['pick_up']
     pick_up_x, pick_up_y, pick_up_theta = pick_up_goal['x'], pick_up_goal['y'], pick_up_goal['theta']
     try:
+        # print("Set ready status to false.")
+        # subprocess.run([
+        #     'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'false'
+        # ])
+
+        close_lid()
+
         move_back(1)
         publish_initial_pose(pick_up_x, pick_up_y, pick_up_theta)
 
@@ -50,6 +69,11 @@ def delivery_and_return (name_of_location):
         # print('Sleeping for 10 seconds to allow for pickup.')
         # time.sleep(5)
         # ## CLOSE LID
+        open_lid()
+        time.sleep(5)
+        close_lid()
+
+
         publish_initial_pose(x, y, theta)
 
         print('Go back to pick up goal')
@@ -62,8 +86,7 @@ def delivery_and_return (name_of_location):
         subprocess.run(command, shell=True, check=True)
 
         docking()
-         ## OPEN LID
-         ## CLOSE LID
+        open_lid()
 
        
 
@@ -71,41 +94,58 @@ def delivery_and_return (name_of_location):
         print(f'Failed to execute send_goal.py: {e}')
         sys.exit(1)
 
-class LocationSubscriber(Node):
+
+
+class DestinationClient(Node):
     def __init__(self):
-        super().__init__('location_subscriber')
-        self.subscription = self.create_subscription(
-            String,
-            '/requested_location',
-            self.listener_callback,
-            10
-        )
+        super().__init__("destination_client")
+        self.cli = self.create_client(Trigger, "get_destination")
+        self.in_progress = False
 
-    def listener_callback(self, msg):
-        self.get_logger().info(f'Received location request: {msg.data}')
-        self.destroy_subscription(self.subscription)
-        
-        delivery_and_return(msg.data)
-        
-        self.subscription = self.create_subscription(
-            String,
-            '/requested_location',
-            self.listener_callback,
-            10
-        )
+        self.get_logger().info("⏳ Waiting for /get_destination …")
+        self.cli.wait_for_service()
+        self.get_logger().info("🟢 Service available")
 
+        # Poll every 5 seconds
+        self.timer = self.create_timer(5.0, self.request_destination)
+
+    def request_destination(self):
+        self.get_logger().info("Requesting destination...")
+        if self.in_progress:
+            self.get_logger().info("⏳ Delivery in progress, skipping request.")
+            return
+
+        req = Trigger.Request()
+        future = self.cli.call_async(req)
+        future.add_done_callback(self.destination_callback)
+
+    def destination_callback(self, future):
+        self.get_logger().info("Destination callback received")
+        try:
+            resp = future.result()
+            self.get_logger().info(f"Resp: {resp}")
+            if resp.success:
+                self.get_logger().info(f"📦 New destination: {resp.message!r}")
+                self.in_progress = True
+
+                # Run delivery (blocking call)
+                delivery_and_return(resp.message)
+
+                self.get_logger().info("✅ Delivery complete")
+                self.in_progress = False
+            else:
+                self.get_logger().warn("⚠️ No destination stored yet.")
+        except Exception as e:
+            self.get_logger().error(f"❌ Service call failed: {e}")
 
 def main(args=None):
+
     rclpy.init(args=args)
     delivery_and_return("sink")
-    return
+    # node = DestinationClient()
+    # rclpy.spin(node)
+    # node.destroy_node()
+    # rclpy.shutdown()
 
-    
-    rclpy.init(args=args)
-    location_subscriber = LocationSubscriber()
-    rclpy.spin(location_subscriber)
-    location_subscriber.destroy_node()
-    rclpy.shutdown()
-    
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
