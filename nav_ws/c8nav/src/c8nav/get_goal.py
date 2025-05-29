@@ -16,23 +16,13 @@ from std_srvs.srv import Trigger
 
 def open_lid():
     for i in range(5):
-        command = (
-            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"'
-        )
-
-        process = subprocess.Popen(command, shell=True)
-        time.sleep(0.5)
-        process.terminate()
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)
+        time.sleep(0.4)
 
 def close_lid():
     for i in range(5):
-        command = (
-            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"'
-        )
-
-        process = subprocess.Popen(command, shell=True)
-        time.sleep(0.5)
-        process.terminate()
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"', shell=True)
+        time.sleep(0.4)
 
 
 def delivery_and_return (name_of_location):
