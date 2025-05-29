@@ -24,8 +24,9 @@ ament_python_install_package(c8nav_py
 install(PROGRAMS
   src/c8nav/nav2_status_publisher.py
   src/c8nav/get_goal.py
-  src/c8nav/qr_code_recognition_create.py
-  src/c8nav/qr_code_recognition.py
+  src/c8nav/pose_estimate.py
+  src/c8nav/qr_code_aruco_create.py
+  src/c8nav/qr_code_direct_navigator.py
   src/c8nav/save_current_pose.py
   src/c8nav/send_goal.py
   DESTINATION lib/${PROJECT_NAME}
