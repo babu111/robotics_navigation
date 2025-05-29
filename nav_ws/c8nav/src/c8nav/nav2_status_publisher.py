@@ -31,7 +31,7 @@ class Nav2StatusPublisher(Node):
         # self.status_sub = self.create_subscription(Nav2Status, '/nav2_status', self.status_callback, 10)
 
         # Timer to publish status periodically
-        self.create_timer(0.5, self.publish_status)
+        self.create_timer(1, self.publish_status)
 
         self.current_position = Point()
         self.goal_position = Point()
@@ -40,23 +40,25 @@ class Nav2StatusPublisher(Node):
         self.last_time = self.get_clock().now().seconds_nanoseconds()[0]
 
     def odom_callback(self, msg: Odometry):
-        self.get_logger().info("Received odom")
+        # self.get_logger().info("Received odom")
         self.current_position = msg.pose.pose.position
 
     def goal_callback(self, msg: PoseStamped):
-        self.get_logger().info("Received goal")
+        # self.get_logger().info("Received goal")
         self.goal_position = msg.pose.position
 
     def status_callback(self, msg: Nav2Status):
         pass  # Empty callback; does nothing
 
     def feedback_callback(self, msg: NavigateToPose_FeedbackMessage):
-        self.distance_remaining = float(msg.feedback.distance_remaining)
-        self.estimated_time_remaining = float(msg.feedback.estimated_time_remaining)
-        self.get_logger().info(
-            f"[Nav2 ETA] Remaining: {self.distance_remaining} m, "
-            f"ETA: {self.estimated_time_remaining} s"
-        )
+        self.distance_remaining = msg.feedback.distance_remaining
+
+        duration = msg.feedback.estimated_time_remaining
+        self.estimated_time_remaining = duration.sec + duration.nanosec * 1e-9
+        # self.get_logger().info(
+        #     f"[Nav2 ETA] Remaining: {self.distance_remaining} m, "
+        #     f"ETA: {self.estimated_time_remaining} s"
+        # )
 
     def compute_distance(self, p1: Point, p2: Point):
         return math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
@@ -69,11 +71,13 @@ class Nav2StatusPublisher(Node):
         msg.position = self.current_position
         msg.distance_to_goal = self.distance_remaining
         msg.estimated_time_to_goal = self.estimated_time_remaining
+        msg.ready = True
 
         self.status_pub.publish(msg)
         self.get_logger().info(
             f"Published: Pos({msg.position.x:.2f},{msg.position.y:.2f}), "
-            f"Dist={msg.distance_to_goal:.2f}m, ETA={msg.estimated_time_to_goal:.1f}s"
+            f"Dist={msg.distance_to_goal:.2f}m, ETA={msg.estimated_time_to_goal:.1f}s, "
+            f"Ready={msg.ready}"
         )
 
 
