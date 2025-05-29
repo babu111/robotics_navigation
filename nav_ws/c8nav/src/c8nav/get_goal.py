@@ -80,16 +80,26 @@ class LocationSubscriber(Node):
             self.listener_callback,
             10
         )
-        self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
         self.get_logger().info(f'Received location request: {msg.data}')
-        delivery_and_return(msg.data.name)
+        self.destroy_subscription(self.subscription)
+        
+        delivery_and_return(msg.data)
+        
+        self.subscription = self.create_subscription(
+            String,
+            '/requested_location',
+            self.listener_callback,
+            10
+        )
 
 
 def main(args=None):
-    delivery_and_return("wall")
-    return
+    # delivery_and_return("sink")
+    # return
+
+    
     rclpy.init(args=args)
     location_subscriber = LocationSubscriber()
     rclpy.spin(location_subscriber)

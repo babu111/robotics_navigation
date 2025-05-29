@@ -29,6 +29,7 @@ install(PROGRAMS
   src/c8nav/qr_code_direct_navigator.py
   src/c8nav/save_current_pose.py
   src/c8nav/send_goal.py
+  src/c8nav/test_location_subscriber.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
