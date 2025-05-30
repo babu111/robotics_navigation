@@ -73,14 +73,15 @@ def delivery_and_return (name_of_location):
         publish_initial_pose(x, y, theta)
 
         print('Go back to pick up goal')
-        ######
-        # command = (
-        #     "ros2 run c8nav send_goal.py "
-        #     f"--x {pre_pick_up['x']} --y {pre_pick_up['y']} --theta {pre_pick_up['theta']}"
-        # )
-        # subprocess.run(command, shell=True, check=True)
-        #publish_initial_pose(pre_pick_up['x'], pre_pick_up['y'], pre_pick_up['theta'])
-        ######
+        
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {pre_pick_up['x']} --y {pre_pick_up['y']} --theta {pre_pick_up['theta']}"
+        )
+        subprocess.run(command, shell=True, check=True)
+        print("Got to pre pickup pose")
+        publish_initial_pose(pre_pick_up['x'], pre_pick_up['y'], pre_pick_up['theta'])
+        
         command = (
             "ros2 run c8nav send_goal.py "
             f"--x {pick_up_x} --y {pick_up_y} --theta {pick_up_theta}"
@@ -154,8 +155,8 @@ class DestinationClient(Node):
 def main(args=None):
 
     rclpy.init(args=args)
-    # delivery_and_return("sink")
-    # return
+    delivery_and_return("elevator")
+    return
     node = DestinationClient()
     rclpy.spin(node)
     node.destroy_node()

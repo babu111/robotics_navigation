@@ -49,7 +49,7 @@ class TimeBasedQRNavigator(Node):
         self.x = msg.x
         self.y = msg.y
         self.theta = msg.theta
-        self.angle_tan = math.atan2(y, x) *0.10
+        self.angle_tan = math.atan2(y, x) *0.2
         self.get_logger().info(f"✅ Received QR Pose: x={x:.2f}, y={y:.2f}, θ={math.degrees(theta):.1f}°, "
                                f"angle_tan={math.degrees(self.angle_tan):.1f}°")
 
