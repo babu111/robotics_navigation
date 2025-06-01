@@ -16,23 +16,13 @@ from std_srvs.srv import Trigger
 
 def open_lid():
     for i in range(5):
-        command = (
-            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"'
-        )
-
-        process = subprocess.Popen(command, shell=True)
-        time.sleep(0.5)
-        process.terminate()
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)
+        time.sleep(0.4)
 
 def close_lid():
     for i in range(5):
-        command = (
-            'ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"'
-        )
-
-        process = subprocess.Popen(command, shell=True)
-        time.sleep(0.5)
-        process.terminate()
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"', shell=True)
+        time.sleep(0.4)
 
 
 def delivery_and_return (name_of_location):
@@ -55,15 +45,16 @@ def delivery_and_return (name_of_location):
     x, y, theta = goal['x'], goal['y'], goal['theta']
     print(f'Sending goal "{name_of_location}": x={x}, y={y}, theta={theta}')
 
+    pre_pick_up = goals['pre_pick_up']
     pick_up_goal = goals['pick_up']
     pick_up_x, pick_up_y, pick_up_theta = pick_up_goal['x'], pick_up_goal['y'], pick_up_goal['theta']
     try:
-        # print("Set ready status to false.")
-        # subprocess.run([
-        #     'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'false'
-        # ])
+        print("Set ready status to false.")
+        subprocess.run([
+            'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'false'
+        ])
 
-        close_lid()
+        # close_lid()
 
         move_back(1)
         publish_initial_pose(pick_up_x, pick_up_y, pick_up_theta)
@@ -74,20 +65,23 @@ def delivery_and_return (name_of_location):
         )
 
         subprocess.run(command, shell=True, check=True)
-
-        #  ## OPEN LID
-        # print('Sleeping for 10 seconds to allow for pickup.')
-        # time.sleep(5)
-        # ## CLOSE LID
-        open_lid()
+        # open_lid()
         time.sleep(5)
-        close_lid()
-
-
+        # close_lid()
+        
+        
         publish_initial_pose(x, y, theta)
 
         print('Go back to pick up goal')
-
+        
+        command = (
+            "ros2 run c8nav send_goal.py "
+            f"--x {pre_pick_up['x']} --y {pre_pick_up['y']} --theta {pre_pick_up['theta']}"
+        )
+        subprocess.run(command, shell=True, check=True)
+        print("Got to pre pickup pose")
+        publish_initial_pose(pre_pick_up['x'], pre_pick_up['y'], pre_pick_up['theta'])
+        
         command = (
             "ros2 run c8nav send_goal.py "
             f"--x {pick_up_x} --y {pick_up_y} --theta {pick_up_theta}"
@@ -96,7 +90,17 @@ def delivery_and_return (name_of_location):
         subprocess.run(command, shell=True, check=True)
 
         docking()
-        open_lid()
+        try:
+            rclpy.init()
+        except:
+            print("init error")
+            pass
+        # open_lid()
+
+        print("Set ready status to true.")
+        subprocess.run([
+            'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'true'
+        ])
 
        
 
@@ -151,11 +155,12 @@ class DestinationClient(Node):
 def main(args=None):
 
     rclpy.init(args=args)
-    delivery_and_return("sink")
-    # node = DestinationClient()
-    # rclpy.spin(node)
-    # node.destroy_node()
-    # rclpy.shutdown()
+    delivery_and_return("elevator")
+    return
+    node = DestinationClient()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == "__main__":
     main()

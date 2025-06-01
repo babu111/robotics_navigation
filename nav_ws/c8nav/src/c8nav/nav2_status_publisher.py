@@ -79,7 +79,8 @@ class Nav2StatusPublisher(Node):
         msg.position = self.current_position
         msg.distance_to_goal = self.distance_remaining
         msg.estimated_time_to_goal = self.estimated_time_remaining
-        msg.ready = True
+        msg.ready = self.get_parameter('ready').get_parameter_value().bool_value
+
 
         self.status_pub.publish(msg)
         self.get_logger().info(
