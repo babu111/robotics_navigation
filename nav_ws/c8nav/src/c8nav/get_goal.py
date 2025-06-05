@@ -17,13 +17,13 @@ from std_srvs.srv import Trigger
 def open_lid():
     for i in range(5):
         # subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)  old version
-        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/ String "data: open"', shell=True)
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/String "data: "open""', shell=True)
         time.sleep(0.4)
     print("Lid opened.")
 
 def close_lid():
     for i in range(5):
-        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/ String "data: close"', shell=True)
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/String "data: "close""', shell=True)
         time.sleep(0.4)
     print("Lid closed.")
 
@@ -158,7 +158,7 @@ class DestinationClient(Node):
 def main(args=None):
 
     rclpy.init(args=args)
-    delivery_and_return("sink")
+    delivery_and_return("elevator")
     return
     node = DestinationClient()
     rclpy.spin(node)

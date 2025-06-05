@@ -24,6 +24,7 @@ setup(
             'save_current_pose = c8nav.save_current_pose:main',
             'get_goal = c8nav.get_goal:main',
             'nav2_status_publisher = c8nav.nav2_status_publisher:main',
+            'qr_code_detect_test = c8nav.qr_code_detect_test:main'
 
         ],
     },

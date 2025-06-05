@@ -34,14 +34,15 @@ def publish_initial_pose(x, y, theta, frame_id='map'):
             msg.pose.pose.orientation.w = qw
 
             # Simple low uncertainty for testing
-            # msg.pose.covariance = [
-            #     0.25, 0,    0, 0, 0, 0,
-            #     0,    0.25, 0, 0, 0, 0,
-            #     0,    0,    0, 0, 0, 0,
-            #     0,    0,    0, 0, 0, 0,
-            #     0,    0,    0, 0, 0, 0,
-            #     0,    0,    0, 0, 0, 0.0685  # yaw covariance
-            # ]
+            msg.pose.covariance = [
+                0.25, 0.0,  0.0, 0.0, 0.0, 0.0,
+                0.0,  0.25, 0.0, 0.0, 0.0, 0.0,
+                0.0,  0.0,  0.0, 0.0, 0.0, 0.0,
+                0.0,  0.0,  0.0, 0.0, 0.0, 0.0,
+                0.0,  0.0,  0.0, 0.0, 0.0, 0.0,
+                0.0,  0.0,  0.0, 0.0, 0.0, 0.0685
+            ]
+
 
             self.publisher.publish(msg)
             self.get_logger().info(f"Published initial pose: x={x:.2f}, y={y:.2f}, theta={theta:.2f} rad")
@@ -52,7 +53,7 @@ def publish_initial_pose(x, y, theta, frame_id='map'):
     print("Initial pose published. Waiting for subscribers...")
 
     # Give time for message to go out before shutdown
-    time.sleep(1.0)
+    time.sleep(3.0)
     node.destroy_node()
     rclpy.shutdown()
     print("Node shutdown. Exiting.")
