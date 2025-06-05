@@ -28,7 +28,8 @@ class ArucoDetectorNode(Node):
         # Subscriber for camera images
         self.subscription = self.create_subscription(
                 Image,
-                '/oak/rgb/image_raw',
+                '/oak_camera/rgb/image_raw',
+                #'/oak_camera/rgb/image_raw/compressed',
                 self.image_callback,
                 10
             )

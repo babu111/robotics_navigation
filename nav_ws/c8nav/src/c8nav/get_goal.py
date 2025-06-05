@@ -16,13 +16,16 @@ from std_srvs.srv import Trigger
 
 def open_lid():
     for i in range(5):
-        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)
+        # subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)  old version
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/ String "data: open"', shell=True)
         time.sleep(0.4)
+    print("Lid opened.")
 
 def close_lid():
     for i in range(5):
-        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: false"', shell=True)
+        subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/ String "data: close"', shell=True)
         time.sleep(0.4)
+    print("Lid closed.")
 
 
 def delivery_and_return (name_of_location):
@@ -54,7 +57,7 @@ def delivery_and_return (name_of_location):
             'ros2', 'param', 'set', '/nav2_status_publisher', 'ready', 'false'
         ])
 
-        # close_lid()
+        close_lid()
 
         move_back(1)
         publish_initial_pose(pick_up_x, pick_up_y, pick_up_theta)
@@ -65,21 +68,21 @@ def delivery_and_return (name_of_location):
         )
 
         subprocess.run(command, shell=True, check=True)
-        # open_lid()
+        open_lid()
         time.sleep(5)
-        # close_lid()
+        close_lid()
         
         
         publish_initial_pose(x, y, theta)
 
-        print('Go back to pick up goal')
         
+        print("Got to pre pickup pose")
         command = (
             "ros2 run c8nav send_goal.py "
             f"--x {pre_pick_up['x']} --y {pre_pick_up['y']} --theta {pre_pick_up['theta']}"
         )
         subprocess.run(command, shell=True, check=True)
-        print("Got to pre pickup pose")
+        print('Go back to pick up goal')
         publish_initial_pose(pre_pick_up['x'], pre_pick_up['y'], pre_pick_up['theta'])
         
         command = (
@@ -95,7 +98,7 @@ def delivery_and_return (name_of_location):
         except:
             print("init error")
             pass
-        # open_lid()
+        open_lid()
 
         print("Set ready status to true.")
         subprocess.run([
@@ -155,7 +158,7 @@ class DestinationClient(Node):
 def main(args=None):
 
     rclpy.init(args=args)
-    delivery_and_return("elevator")
+    delivery_and_return("sink")
     return
     node = DestinationClient()
     rclpy.spin(node)
