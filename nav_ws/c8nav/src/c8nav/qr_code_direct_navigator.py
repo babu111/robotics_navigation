@@ -18,7 +18,7 @@ class TimeBasedQRNavigator(Node):
 
         # Speed configurations
         self.linear_speed = 0.1  # m/s
-        self.angular_speed = 0.1 # rad/s
+        self.angular_speed = 0.3 # rad/s
 
         # Target pose container
         self.qr_pose = None
@@ -37,20 +37,20 @@ class TimeBasedQRNavigator(Node):
         }
 
         # Timer for control loop
-        self.timer = self.create_timer(0.1, self.control_loop)
+        self.timer = self.create_timer(0.05, self.control_loop)
 
-    def set_qr_pose(self, x: float, y: float, theta: float):
+    def set_qr_pose(self, x: float, y: float):
         """Set QR Pose directly instead of subscribing to a topic"""
         current_time = time.time()
         self.last_qr_time = current_time
 
-        msg = Pose2D(x=x, y=y, theta=theta)
+        msg = Pose2D(x=x, y=y)
         self.qr_pose = msg
-        self.x = msg.x
-        self.y = msg.y
-        self.theta = msg.theta
-        self.angle_tan = math.atan2(y, x) *2/5
-        self.get_logger().info(f"✅ Received QR Pose: x={x:.2f}, y={y:.2f}, θ={math.degrees(theta):.1f}°, "
+        self.x = x * 1.0
+        self.y = y * 1.0
+
+        self.angle_tan = math.atan2(y, x)
+        self.get_logger().info(f"✅ Received QR Pose: x={x:.2f}, y={y:.2f},"
                                f"angle_tan={math.degrees(self.angle_tan):.1f}°")
 
 
@@ -80,7 +80,7 @@ class TimeBasedQRNavigator(Node):
         else:
             self._stop()
             self.get_logger().info("✅ Rotation complete. Start moving forward.")
-            distance = math.hypot(self.x, self.y) + 0.8  # add a small buffer to ensure we reach the target
+            distance = math.hypot(self.x, self.y) + 0.4 # add a small buffer to ensure we reach the target
             self.motion_duration = distance / self.linear_speed
             self.state = 'move_forward'
             self.state_start_time = self._now()

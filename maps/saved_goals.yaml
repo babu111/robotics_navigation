@@ -4,13 +4,13 @@ old_pick_up:
   theta: -1.5706
 
 wall:
-  x: -1.2110413
+  x: -0.5110413
   y: 11.7100902
   theta: -0.99845
 
 sink:
-  x: -3.284
-  y: 2.191
+  x: -3.584
+  y: 1.591
   theta: -0.002
 
 elevator:
@@ -29,6 +29,11 @@ sofa:
   theta: 2.899
 
 pick_up:
-  x: 1.897
-  y: -0.628
+  x: 1.642
+  y: -1.008
+  theta: -1.747
+
+pre_pick_up:
+  x: 1.737
+  y: 2.18
   theta: -1.747
