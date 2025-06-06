@@ -15,7 +15,7 @@ from std_msgs.msg import String
 from std_srvs.srv import Trigger
 
 def open_lid():
-    for i in range(5):
+    for i in range(20):
         # subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/Bool "data: true"', shell=True)  old version
         subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/String "data: "open""', shell=True)
         time.sleep(0.4)
@@ -23,7 +23,7 @@ def open_lid():
     time.sleep(5)
 
 def close_lid():
-    for i in range(5):
+    for i in range(20):
         subprocess.run('ros2 topic pub --once /lid_cmd std_msgs/msg/String "data: "close""', shell=True)
         time.sleep(0.4)
     print("Lid closed.")
