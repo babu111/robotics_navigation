@@ -14,6 +14,12 @@
 
 - Concatenated the kitchen map and the robotics workshop map together.
 - Able to use python code to give nav goal in coordinates and let turtlebot navigate to that spot.
+
+### Milestone 3:
+
+- Tested docking using QR code based pose detection. Used ARUCO package and open loop docking.
+- Made a client to subscribe commands from orchestration team. Verified that both teams can work together.
+
 ---
 
 ## Configuring Environment
